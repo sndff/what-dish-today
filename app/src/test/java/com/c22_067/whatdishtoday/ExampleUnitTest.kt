@@ -1,4 +1,4 @@
-package com.saifer.whatdishtoday
+package com.c22_067.whatdishtoday
 
 import org.junit.Test
 

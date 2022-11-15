@@ -1,4 +1,4 @@
-package com.saifer.whatdishtoday
+package com.c22_067.whatdishtoday
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.saifer.whatdishtoday", appContext.packageName)
+        assertEquals("com.c22_067.whatdishtoday", appContext.packageName)
     }
 }
