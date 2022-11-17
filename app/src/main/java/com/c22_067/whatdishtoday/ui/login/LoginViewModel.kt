@@ -6,8 +6,8 @@ import androidx.lifecycle.ViewModel
 import android.util.Patterns
 import com.c22_067.whatdishtoday.data.LoginRepository
 import com.c22_067.whatdishtoday.data.Result
-
 import com.c22_067.whatdishtoday.R
+
 
 class LoginViewModel(private val loginRepository: LoginRepository) : ViewModel() {
 

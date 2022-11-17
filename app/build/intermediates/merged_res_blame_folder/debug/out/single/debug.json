@@ -1,0 +1,194 @@
+[
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\layout_search_filter.xml.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\layout\\search_filter.xml"
+    },
+    {
+        "merged": "com.c22_067.whatdishtoday.app-merged_res-35:/layout_activity_favorite.xml.flat",
+        "source": "com.c22_067.whatdishtoday.app-main-37:/layout/activity_favorite.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\layout_activity_favorite.xml.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\layout\\activity_favorite.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\font_poppins_bold.ttf.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\font\\poppins_bold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\drawable_gradient.png.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\drawable\\gradient.png"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\layout_fragment_home_all.xml.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\layout\\fragment_home_all.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\layout_fragment_home_pedas.xml.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\layout\\fragment_home_pedas.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\drawable_search_view_bg.xml.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\drawable\\search_view_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\layout_fragment_home_sayuran.xml.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\layout\\fragment_home_sayuran.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\layout_item_rv_main_category.xml.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\layout\\item_rv_main_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\layout_fragment_home_kalori.xml.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\layout\\fragment_home_kalori.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\drawable_avatar.jpeg.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\drawable\\avatar.jpeg"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\layout_item_favorite.xml.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\layout\\item_favorite.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\layout_fragment_home_camilan.xml.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\layout\\fragment_home_camilan.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\drawable_dish.png.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\drawable\\dish.png"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\drawable_home_black_24.xml.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\drawable\\home_black_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\font_gilroy_light.otf.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\font\\gilroy_light.otf"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\drawable_search_bg.xml.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\drawable\\search_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\layout_fragment_home_sop.xml.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\layout\\fragment_home_sop.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\layout_item_search.xml.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\layout\\item_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\layout_activity_home.xml.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\drawable_ic_baseline_close_24.xml.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\drawable\\ic_baseline_close_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\font_gilroy_bold.otf.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\font\\gilroy_bold.otf"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\drawable_ic_baseline_filter_alt_24.xml.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\drawable\\ic_baseline_filter_alt_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\layout_fragment_home_daging.xml.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\layout\\fragment_home_daging.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\drawable_cat_img.png.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\drawable\\cat_img.png"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\layout_activity_search.xml.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\layout\\activity_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\layout-w936dp_activity_login.xml.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\layout-w936dp\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\layout-w1240dp_activity_login.xml.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\layout-w1240dp\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\font_poppins_regular.ttf.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\font\\poppins_regular.ttf"
+    },
+    {
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-merged_res-35:\\layout_item_rv_sub_category.xml.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-37:\\layout\\item_rv_sub_category.xml"
+    }
+]

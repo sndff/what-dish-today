@@ -21,4 +21,22 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="photo">Foto</string>
     <string name="dish_name">Dish Name</string>
+    <!-- Strings related to Search Activity -->
+    <string name="txt_name">Name</string>
+    <string name="must_try">must try</string>
+    <string name="see_all">see all</string>
+    <string-array name="data_name">
+        <item>Chicken Katsu</item>
+        <item>Chicken Teriyaki</item>
+        <item>Chicken Wings</item>
+        <item>Fried Chicken</item>
+        <item>Salted Egg Chicken</item>
+    </string-array>
+    <integer-array name="data_photo">
+        <item>@drawable/dish</item>
+        <item>@drawable/dish</item>
+        <item>@drawable/dish</item>
+        <item>@drawable/dish</item>
+        <item>@drawable/dish</item>
+    </integer-array>
 </resources>
