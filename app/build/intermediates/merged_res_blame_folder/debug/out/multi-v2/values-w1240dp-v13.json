@@ -4,13 +4,13 @@
             "outputFile": "com.c22_067.whatdishtoday.app-mergeDebugResources-33:/values-w1240dp-v13/values-w1240dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Fajar\\OneDrive\\Documents\\GitHub\\what-dish-today\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
+                    "source": "/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/res/values-w1240dp/dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",
-                        "startOffsets": "17",
+                        "startOffsets": "16",
                         "endColumns": "58",
-                        "endOffsets": "71"
+                        "endOffsets": "70"
                     },
                     "to": {
                         "startLines": "2",

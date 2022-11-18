@@ -15,12 +15,25 @@
         android:debuggable="true"
         android:extractNativeLibs="false"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.WhatDishToday" >
+        <activity
+            android:name="com.c22_067.whatdishtoday.MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.c22_067.whatdishtoday.ui.detail.DetailMenuActivity"
+            android:exported="false"
+            android:parentActivityName="ui.menu.MenuMakananActivity" />
         <activity
             android:name="com.c22_067.whatdishtoday.ui.HomeActivity"
             android:exported="false" >
@@ -30,16 +43,10 @@
         </activity>
         <activity
             android:name="com.c22_067.whatdishtoday.ui.favorite.FavoriteActivity"
-            android:exported="true" >
+            android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.c22_067.whatdishtoday.ui.search.Search"
@@ -50,8 +57,10 @@
         </activity>
         <activity
             android:name="com.c22_067.whatdishtoday.ui.login.LoginActivity"
-            android:exported="true"
-            android:label="@string/app_name" >
+            android:exported="false" />
+        <activity
+            android:name="com.c22_067.whatdishtoday.ui.menu.MenuMakananActivity"
+            android:exported="false" >
         </activity>
 
         <provider

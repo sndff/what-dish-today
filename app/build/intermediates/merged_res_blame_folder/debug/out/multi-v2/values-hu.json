@@ -4,7 +4,7 @@
             "outputFile": "com.c22_067.whatdishtoday.app-mergeDebugResources-33:/values-hu/values-hu.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-3\\685980b024686d78956b91eec9b43f3b\\transformed\\appcompat-1.5.1\\res\\values-hu\\values-hu.xml",
+                    "source": "/home/saifer/.gradle/caches/transforms-3/86f96b00c7cb73def924c58d74ff7ebd/transformed/appcompat-1.5.1/res/values-hu/values-hu.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-3\\11918c9aa544653f8c45c32ea9ac02b8\\transformed\\material-1.7.0\\res\\values-hu\\values-hu.xml",
+                    "source": "/home/saifer/.gradle/caches/transforms-3/71230e517328ce697d91b19ad9753659/transformed/material-1.7.0/res/values-hu/values-hu.xml",
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -40,7 +40,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-3\\6a19de105318aab1da00cfa3c60fb56e\\transformed\\core-1.8.0\\res\\values-hu\\values-hu.xml",
+                    "source": "/home/saifer/.gradle/caches/transforms-3/fa579a56dc4a7f6c1402557455e44eec/transformed/core-1.8.0/res/values-hu/values-hu.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
