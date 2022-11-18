@@ -17,4 +17,34 @@
     <string name="review">Review</string>
     <string name="resep">Resep</string>
     <string name="deskripsi">Deskripsi</string>
+    <!-- Strings related to Home Activity -->
+    <string name="tab_text_1">All</string>
+    <string name="tab_text_2">Pedas</string>
+    <string name="tab_text_3">Daging</string>
+    <string name="tab_text_4">Sop</string>
+    <string name="tab_text_5">Camilan</string>
+    <string name="tab_text_6">Sayuran</string>
+    <string name="tab_text_7">Rendah Kalori</string>
+    <string name="content_tab_text">tab_text_%1$d</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="photo">Foto</string>
+    <string name="dish_name">Dish Name</string>
+    <!-- Strings related to Search Activity -->
+    <string name="txt_name">Name</string>
+    <string name="must_try">must try</string>
+    <string name="see_all">see all</string>
+    <string-array name="data_name">
+        <item>Chicken Katsu</item>
+        <item>Chicken Teriyaki</item>
+        <item>Chicken Wings</item>
+        <item>Fried Chicken</item>
+        <item>Salted Egg Chicken</item>
+    </string-array>
+    <integer-array name="data_photo">
+        <item>@drawable/dish</item>
+        <item>@drawable/dish</item>
+        <item>@drawable/dish</item>
+        <item>@drawable/dish</item>
+        <item>@drawable/dish</item>
+    </integer-array>
 </resources>
