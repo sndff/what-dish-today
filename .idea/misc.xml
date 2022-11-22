@@ -3,9 +3,28 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/aliftafn/AndroidStudioProjects/1_Capstone/what-dish-today/app/src/main/res/drawable-v24/edit_text_shadow.xml" value="0.229" />
+        <entry key="..\:/Users/aliftafn/AndroidStudioProjects/1_Capstone/what-dish-today/app/src/main/res/drawable-v24/ic_favorite.xml" value="0.2245" />
+        <entry key="..\:/Users/aliftafn/AndroidStudioProjects/1_Capstone/what-dish-today/app/src/main/res/layout/activity_detail_menu.xml" value="0.264" />
+        <entry key="..\:/Users/aliftafn/AndroidStudioProjects/1_Capstone/what-dish-today/app/src/main/res/layout/activity_login.xml" value="0.21603260869565216" />
+        <entry key="..\:/Users/aliftafn/AndroidStudioProjects/1_Capstone/what-dish-today/app/src/main/res/layout/activity_menu_makanan.xml" value="0.22418478260869565" />
+        <entry key="..\:/Users/aliftafn/AndroidStudioProjects/1_Capstone/what-dish-today/app/src/main/res/layout/fragment_directions.xml" value="0.22418478260869565" />
+        <entry key="..\:/Users/aliftafn/AndroidStudioProjects/1_Capstone/what-dish-today/app/src/main/res/layout/fragment_ingridients.xml" value="0.22418478260869565" />
+        <entry key="..\:/Users/aliftafn/AndroidStudioProjects/1_Capstone/what-dish-today/app/src/main/res/layout/fragment_review.xml" value="0.22418478260869565" />
+        <entry key="..\:/Users/aliftafn/AndroidStudioProjects/1_Capstone/what-dish-today/app/src/main/res/layout/resep.xml" value="0.4" />
+        <entry key="..\:/Users/aliftafn/AndroidStudioProjects/1_Capstone/what-dish-today/app/src/main/res/layout/review.xml" value="0.536" />
+        <entry key="..\:/Users/aliftafn/AndroidStudioProjects/1_Capstone/what-dish-today/app/src/main/res/menu/menu.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_favorite.xml" value="0.17028985507246377" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.21875" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.21875" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.20416666666666666" />
+        <entry key="app/src/main/res/layout/fragment_experiment.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_home_all.xml" value="0.17028985507246377" />
+        <entry key="app/src/main/res/layout/fragment_home_camilan.xml" value="0.17028985507246377" />
+        <entry key="app/src/main/res/layout/item_experiment.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/item_favorite.xml" value="0.21927083333333333" />
+        <entry key="app/src/main/res/layout/popup_login.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/popup_register.xml" value="0.1" />
       </map>
     </option>
   </component>
