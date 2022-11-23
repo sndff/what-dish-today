@@ -1,4 +1,4 @@
-package com.dicoding.picodiploma.homerecipe.network
+package com.c22_067.whatdishtoday.network
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

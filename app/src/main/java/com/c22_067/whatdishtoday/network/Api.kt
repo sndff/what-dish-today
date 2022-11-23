@@ -1,4 +1,4 @@
-package com.dicoding.picodiploma.homerecipe.network
+package com.c22_067.whatdishtoday.network
 
 import com.dicoding.picodiploma.homerecipe.datasource.DetailMakanan
 import com.dicoding.picodiploma.homerecipe.datasource.Makanan

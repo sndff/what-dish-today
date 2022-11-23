@@ -3,7 +3,7 @@ package com.c22_067.whatdishtoday.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.dicoding.picodiploma.homerecipe.databinding.ItemRvMainCategoryBinding
+import com.c22_067.whatdishtoday.databinding.ItemRvMainCategoryBinding
 import com.dicoding.picodiploma.homerecipe.datasource.Makanan
 
 class MakananAdapter : RecyclerView.Adapter<MakananAdapter.MakananViewHolder>() {
