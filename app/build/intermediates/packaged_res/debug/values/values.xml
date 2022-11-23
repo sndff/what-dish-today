@@ -43,10 +43,16 @@
     <string name="action_sign_in_short">Sign in</string>
     <string name="app_name">What Dish Today</string>
     <string name="content_tab_text">tab_text_%1$d</string>
+    <string name="default_web_client_id" translatable="false">1004019989532-6fjcjijedupred84ri1qjv15rmd5n3pd.apps.googleusercontent.com</string>
     <string name="deskripsi">Deskripsi</string>
     <string name="directions">Directions</string>
     <string name="dish_name">Dish Name</string>
     <string name="favorte">Favorite</string>
+    <string name="gcm_defaultSenderId" translatable="false">1004019989532</string>
+    <string name="google_api_key" translatable="false">AIzaSyAacfOaYD9BtvbE_fEEzQrKCS7U8_X21R8</string>
+    <string name="google_app_id" translatable="false">1:1004019989532:android:ef87340a2a213087caf3d9</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAacfOaYD9BtvbE_fEEzQrKCS7U8_X21R8</string>
+    <string name="google_storage_bucket" translatable="false">what-dish-today-26a54.appspot.com</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="ingredients">Ingridients</string>
     <string name="invalid_password">Password must be >5 characters</string>
@@ -54,6 +60,7 @@
     <string name="login_failed">"Login failed"</string>
     <string name="must_try">must try</string>
     <string name="photo">Foto</string>
+    <string name="project_id" translatable="false">what-dish-today-26a54</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
     <string name="resep">Resep</string>

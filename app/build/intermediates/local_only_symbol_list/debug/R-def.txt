@@ -61,7 +61,6 @@ id button8
 id button9
 id camera
 id card_view
-id container
 id favorite
 id floatingActionButton
 id gv_experiment
@@ -71,10 +70,7 @@ id img_item_photo
 id img_item_profil
 id iv_item_experiment
 id linearLayout
-id loading
-id login
 id messageEditText
-id password
 id rv_favorite
 id rv_main_category
 id rv_resep
@@ -92,12 +88,10 @@ id tv_item_description
 id tv_item_experiment
 id tv_item_name
 id tv_must_try
-id username
 id view_pager
 layout activity_detail_menu
 layout activity_favorite
 layout activity_home
-layout activity_login
 layout activity_main
 layout activity_menu_makanan
 layout activity_search
@@ -129,10 +123,16 @@ string action_sign_in
 string action_sign_in_short
 string app_name
 string content_tab_text
+string default_web_client_id
 string deskripsi
 string directions
 string dish_name
 string favorte
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string hello_blank_fragment
 string ingredients
 string invalid_password
@@ -140,6 +140,7 @@ string invalid_username
 string login_failed
 string must_try
 string photo
+string project_id
 string prompt_email
 string prompt_password
 string resep

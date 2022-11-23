@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.c22_067.whatdishtoday.app-mergeDebugResources-33:/values-xlarge-v4/values-xlarge-v4.xml",
+            "outputFile": "com.c22_067.whatdishtoday.app-mergeDebugResources-39:/values-xlarge-v4/values-xlarge-v4.xml",
             "map": [
                 {
-                    "source": "/home/saifer/.gradle/caches/transforms-3/86f96b00c7cb73def924c58d74ff7ebd/transformed/appcompat-1.5.1/res/values-xlarge-v4/values-xlarge-v4.xml",
+                    "source": "C:\\Users\\aliftafn\\.gradle\\caches\\transforms-3\\fc2def48eea104d49d2db7e64e3d4bc0\\transformed\\appcompat-1.5.1\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",

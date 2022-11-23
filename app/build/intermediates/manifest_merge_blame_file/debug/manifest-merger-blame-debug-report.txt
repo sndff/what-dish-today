@@ -6,132 +6,291 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="27"
-8-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml
+8-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml
+9-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml
 10
-11    <application
-11-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:6:5-57:19
-12        android:allowBackup="true"
-12-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:7:9-35
-13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.8.0] /home/saifer/.gradle/caches/transforms-3/fa579a56dc4a7f6c1402557455e44eec/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
-14        android:dataExtractionRules="@xml/data_extraction_rules"
-14-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:8:9-65
-15        android:debuggable="true"
-16        android:extractNativeLibs="false"
-17        android:fullBackupContent="@xml/backup_rules"
-17-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:9:9-54
-18        android:icon="@drawable/logo"
-18-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:10:9-38
-19        android:label="@string/app_name"
-19-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:11:9-41
-20        android:roundIcon="@drawable/logo"
-20-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:12:9-43
-21        android:supportsRtl="true"
-21-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:13:9-35
-22        android:testOnly="true"
-23        android:theme="@style/Theme.WhatDishToday" >
-23-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:14:9-51
-24        <activity
-24-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:16:9-24:20
-25            android:name="com.c22_067.whatdishtoday.MainActivity"
-25-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:17:17-45
-26            android:exported="true" >
-26-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:18:17-40
-27            <intent-filter>
-27-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:19:13-23:29
-28                <action android:name="android.intent.action.MAIN" />
-28-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:20:17-69
-28-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:20:25-66
-29
-30                <category android:name="android.intent.category.LAUNCHER" />
-30-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:22:17-77
-30-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:22:27-74
-31            </intent-filter>
-32        </activity>
-33        <activity
-33-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:25:9-28:72
-34            android:name="com.c22_067.whatdishtoday.ui.detail.DetailMenuActivity"
-34-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:26:13-57
-35            android:exported="false"
-35-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:27:13-37
-36            android:parentActivityName="ui.menu.MenuMakananActivity" />
-36-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:28:13-69
-37        <activity
-37-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:29:9-35:20
-38            android:name="com.c22_067.whatdishtoday.ui.HomeActivity"
-38-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:30:13-44
-39            android:exported="false" >
-39-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:31:13-37
-40            <meta-data
-40-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:32:13-34:36
-41                android:name="android.app.lib_name"
-41-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:33:17-52
-42                android:value="" />
-42-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:34:17-33
-43        </activity>
-44        <activity
-44-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:36:9-42:20
-45            android:name="com.c22_067.whatdishtoday.ui.favorite.FavoriteActivity"
-45-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:37:13-57
-46            android:exported="false" >
-46-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:38:13-37
-47            <meta-data
-47-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:32:13-34:36
-48                android:name="android.app.lib_name"
-48-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:33:17-52
-49                android:value="" />
-49-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:34:17-33
-50        </activity>
-51        <activity
-51-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:43:9-49:20
-52            android:name="com.c22_067.whatdishtoday.ui.search.Search"
-52-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:44:13-45
-53            android:exported="false" >
-53-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:45:13-37
-54            <meta-data
-54-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:32:13-34:36
-55                android:name="android.app.lib_name"
-55-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:33:17-52
-56                android:value="" />
-56-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:34:17-33
-57        </activity>
-58        <activity
-58-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:50:9-52:40
-59            android:name="com.c22_067.whatdishtoday.ui.login.LoginActivity"
-59-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:51:13-51
-60            android:exported="false" />
-60-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:52:13-37
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:23:5-67
+11-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:23:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:24:5-79
+12-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:24:22-76
+13
+14    <application
+14-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:6:5-57:19
+15        android:allowBackup="true"
+15-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:7:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.8.0] C:\Users\aliftafn\.gradle\caches\transforms-3\72b6258925e3e9dda746457c7d288d6b\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+17        android:dataExtractionRules="@xml/data_extraction_rules"
+17-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:8:9-65
+18        android:debuggable="true"
+19        android:extractNativeLibs="false"
+20        android:fullBackupContent="@xml/backup_rules"
+20-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:9:9-54
+21        android:icon="@drawable/logo"
+21-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:10:9-38
+22        android:label="@string/app_name"
+22-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:11:9-41
+23        android:roundIcon="@drawable/logo"
+23-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:12:9-43
+24        android:supportsRtl="true"
+24-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:13:9-35
+25        android:testOnly="true"
+26        android:theme="@style/Theme.WhatDishToday" >
+26-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:14:9-51
+27        <activity
+27-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:16:9-24:20
+28            android:name="com.c22_067.whatdishtoday.MainActivity"
+28-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:17:17-45
+29            android:exported="true" >
+29-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:18:17-40
+30            <intent-filter>
+30-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:19:13-23:29
+31                <action android:name="android.intent.action.MAIN" />
+31-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:20:17-69
+31-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:20:25-66
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:22:17-77
+33-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:22:27-74
+34            </intent-filter>
+35        </activity>
+36        <activity
+36-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:25:9-28:72
+37            android:name="com.c22_067.whatdishtoday.ui.detail.DetailMenuActivity"
+37-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:26:13-57
+38            android:exported="false"
+38-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:27:13-37
+39            android:parentActivityName="ui.menu.MenuMakananActivity" />
+39-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:28:13-69
+40        <activity
+40-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:29:9-35:20
+41            android:name="com.c22_067.whatdishtoday.ui.HomeActivity"
+41-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:30:13-44
+42            android:exported="false" >
+42-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:31:13-37
+43            <meta-data
+43-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:32:13-34:36
+44                android:name="android.app.lib_name"
+44-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:33:17-52
+45                android:value="" />
+45-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:34:17-33
+46        </activity>
+47        <activity
+47-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:36:9-42:20
+48            android:name="com.c22_067.whatdishtoday.ui.favorite.FavoriteActivity"
+48-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:37:13-57
+49            android:exported="false" >
+49-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:38:13-37
+50            <meta-data
+50-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:32:13-34:36
+51                android:name="android.app.lib_name"
+51-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:33:17-52
+52                android:value="" />
+52-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:34:17-33
+53        </activity>
+54        <activity
+54-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:43:9-49:20
+55            android:name="com.c22_067.whatdishtoday.ui.search.Search"
+55-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:44:13-45
+56            android:exported="false" >
+56-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:45:13-37
+57            <meta-data
+57-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:32:13-34:36
+58                android:name="android.app.lib_name"
+58-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:33:17-52
+59                android:value="" />
+59-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:34:17-33
+60        </activity>
 61        <activity
-61-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:53:9-56:20
-62            android:name="com.c22_067.whatdishtoday.ui.menu.MenuMakananActivity"
-62-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:54:13-56
-63            android:exported="false" >
-63-->/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/AndroidManifest.xml:55:13-37
-64        </activity>
-65
-66        <provider
-66-->[androidx.emoji2:emoji2:1.2.0] /home/saifer/.gradle/caches/transforms-3/44470080314974447305afb1929f45ab/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-67            android:name="androidx.startup.InitializationProvider"
-67-->[androidx.emoji2:emoji2:1.2.0] /home/saifer/.gradle/caches/transforms-3/44470080314974447305afb1929f45ab/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
-68            android:authorities="com.c22_067.whatdishtoday.androidx-startup"
-68-->[androidx.emoji2:emoji2:1.2.0] /home/saifer/.gradle/caches/transforms-3/44470080314974447305afb1929f45ab/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
-69            android:exported="false" >
-69-->[androidx.emoji2:emoji2:1.2.0] /home/saifer/.gradle/caches/transforms-3/44470080314974447305afb1929f45ab/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
-70            <meta-data
-70-->[androidx.emoji2:emoji2:1.2.0] /home/saifer/.gradle/caches/transforms-3/44470080314974447305afb1929f45ab/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-71                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-71-->[androidx.emoji2:emoji2:1.2.0] /home/saifer/.gradle/caches/transforms-3/44470080314974447305afb1929f45ab/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
-72                android:value="androidx.startup" />
-72-->[androidx.emoji2:emoji2:1.2.0] /home/saifer/.gradle/caches/transforms-3/44470080314974447305afb1929f45ab/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+61-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:50:9-52:40
+62            android:name="com.c22_067.whatdishtoday.ui.login.LoginActivity"
+62-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:51:13-51
+63            android:exported="false" />
+63-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:52:13-37
+64        <activity
+64-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:53:9-56:20
+65            android:name="com.c22_067.whatdishtoday.ui.menu.MenuMakananActivity"
+65-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:54:13-56
+66            android:exported="false" >
+66-->C:\Users\aliftafn\AndroidStudioProjects\1_Caps disini\what-dish-today\app\src\main\AndroidManifest.xml:55:13-37
+67        </activity>
+68
+69        <service
+69-->[com.google.firebase:firebase-auth-ktx:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\7ec4d8e4fd000c263fc3df49ef96a945\transformed\firebase-auth-ktx-21.1.0\AndroidManifest.xml:8:9-14:19
+70            android:name="com.google.firebase.components.ComponentDiscoveryService"
+70-->[com.google.firebase:firebase-auth-ktx:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\7ec4d8e4fd000c263fc3df49ef96a945\transformed\firebase-auth-ktx-21.1.0\AndroidManifest.xml:9:13-84
+71            android:directBootAware="true"
+71-->[com.google.firebase:firebase-common:20.2.0] C:\Users\aliftafn\.gradle\caches\transforms-3\11e6d13c3cdfc4e0f75f7b663ae9cb1e\transformed\firebase-common-20.2.0\AndroidManifest.xml:34:13-43
+72            android:exported="false" >
+72-->[com.google.firebase:firebase-auth-ktx:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\7ec4d8e4fd000c263fc3df49ef96a945\transformed\firebase-auth-ktx-21.1.0\AndroidManifest.xml:10:13-37
 73            <meta-data
-73-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/saifer/.gradle/caches/transforms-3/2e0980c0b5eb61dc2a66779e006b2e81/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
-74                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-74-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/saifer/.gradle/caches/transforms-3/2e0980c0b5eb61dc2a66779e006b2e81/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
-75                android:value="androidx.startup" />
-75-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/saifer/.gradle/caches/transforms-3/2e0980c0b5eb61dc2a66779e006b2e81/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
-76        </provider>
-77    </application>
-78
-79</manifest>
+73-->[com.google.firebase:firebase-auth-ktx:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\7ec4d8e4fd000c263fc3df49ef96a945\transformed\firebase-auth-ktx-21.1.0\AndroidManifest.xml:11:13-13:85
+74                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar"
+74-->[com.google.firebase:firebase-auth-ktx:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\7ec4d8e4fd000c263fc3df49ef96a945\transformed\firebase-auth-ktx-21.1.0\AndroidManifest.xml:12:17-116
+75                android:value="com.google.firebase.components.ComponentRegistrar" />
+75-->[com.google.firebase:firebase-auth-ktx:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\7ec4d8e4fd000c263fc3df49ef96a945\transformed\firebase-auth-ktx-21.1.0\AndroidManifest.xml:13:17-82
+76            <meta-data
+76-->[com.google.firebase:firebase-common-ktx:20.2.0] C:\Users\aliftafn\.gradle\caches\transforms-3\f20c728c4ad3fd778b6a19adef23987e\transformed\firebase-common-ktx-20.2.0\AndroidManifest.xml:14:13-16:85
+77                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+77-->[com.google.firebase:firebase-common-ktx:20.2.0] C:\Users\aliftafn\.gradle\caches\transforms-3\f20c728c4ad3fd778b6a19adef23987e\transformed\firebase-common-ktx-20.2.0\AndroidManifest.xml:15:17-113
+78                android:value="com.google.firebase.components.ComponentRegistrar" />
+78-->[com.google.firebase:firebase-common-ktx:20.2.0] C:\Users\aliftafn\.gradle\caches\transforms-3\f20c728c4ad3fd778b6a19adef23987e\transformed\firebase-common-ktx-20.2.0\AndroidManifest.xml:16:17-82
+79            <meta-data
+79-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:67:13-69:85
+80                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+80-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:68:17-109
+81                android:value="com.google.firebase.components.ComponentRegistrar" />
+81-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:69:17-82
+82        </service>
+83
+84        <activity
+84-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\aliftafn\.gradle\caches\transforms-3\9be90e9d3a6c4d06596da70c85e63173\transformed\play-services-auth-20.4.0\AndroidManifest.xml:23:9-27:75
+85            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+85-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\aliftafn\.gradle\caches\transforms-3\9be90e9d3a6c4d06596da70c85e63173\transformed\play-services-auth-20.4.0\AndroidManifest.xml:24:13-93
+86            android:excludeFromRecents="true"
+86-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\aliftafn\.gradle\caches\transforms-3\9be90e9d3a6c4d06596da70c85e63173\transformed\play-services-auth-20.4.0\AndroidManifest.xml:25:13-46
+87            android:exported="false"
+87-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\aliftafn\.gradle\caches\transforms-3\9be90e9d3a6c4d06596da70c85e63173\transformed\play-services-auth-20.4.0\AndroidManifest.xml:26:13-37
+88            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+88-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\aliftafn\.gradle\caches\transforms-3\9be90e9d3a6c4d06596da70c85e63173\transformed\play-services-auth-20.4.0\AndroidManifest.xml:27:13-72
+89        <!--
+90            Service handling Google Sign-In user revocation. For apps that do not integrate with
+91            Google Sign-In, this service will never be started.
+92        -->
+93        <service
+93-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\aliftafn\.gradle\caches\transforms-3\9be90e9d3a6c4d06596da70c85e63173\transformed\play-services-auth-20.4.0\AndroidManifest.xml:33:9-37:51
+94            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+94-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\aliftafn\.gradle\caches\transforms-3\9be90e9d3a6c4d06596da70c85e63173\transformed\play-services-auth-20.4.0\AndroidManifest.xml:34:13-89
+95            android:exported="true"
+95-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\aliftafn\.gradle\caches\transforms-3\9be90e9d3a6c4d06596da70c85e63173\transformed\play-services-auth-20.4.0\AndroidManifest.xml:35:13-36
+96            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+96-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\aliftafn\.gradle\caches\transforms-3\9be90e9d3a6c4d06596da70c85e63173\transformed\play-services-auth-20.4.0\AndroidManifest.xml:36:13-107
+97            android:visibleToInstantApps="true" />
+97-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\aliftafn\.gradle\caches\transforms-3\9be90e9d3a6c4d06596da70c85e63173\transformed\play-services-auth-20.4.0\AndroidManifest.xml:37:13-48
+98
+99        <activity
+99-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:27:9-44:20
+100            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+100-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:28:13-80
+101            android:excludeFromRecents="true"
+101-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:29:13-46
+102            android:exported="true"
+102-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:30:13-36
+103            android:launchMode="singleTask"
+103-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:31:13-44
+104            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+104-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:32:13-72
+105            <intent-filter>
+105-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:33:13-43:29
+106                <action android:name="android.intent.action.VIEW" />
+106-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:17-69
+106-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:25-66
+107
+108                <category android:name="android.intent.category.DEFAULT" />
+108-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:17-76
+108-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:27-73
+109                <category android:name="android.intent.category.BROWSABLE" />
+109-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:17-78
+109-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:27-75
+110
+111                <data
+111-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:39:17-42:51
+112                    android:host="firebase.auth"
+112-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:40:21-49
+113                    android:path="/"
+113-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:41:21-37
+114                    android:scheme="genericidp" />
+114-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:42:21-48
+115            </intent-filter>
+116        </activity>
+117        <activity
+117-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:45:9-62:20
+118            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+118-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:46:13-79
+119            android:excludeFromRecents="true"
+119-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:47:13-46
+120            android:exported="true"
+120-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:48:13-36
+121            android:launchMode="singleTask"
+121-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:49:13-44
+122            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+122-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:50:13-72
+123            <intent-filter>
+123-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:51:13-61:29
+124                <action android:name="android.intent.action.VIEW" />
+124-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:17-69
+124-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:25-66
+125
+126                <category android:name="android.intent.category.DEFAULT" />
+126-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:17-76
+126-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:27-73
+127                <category android:name="android.intent.category.BROWSABLE" />
+127-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:17-78
+127-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:27-75
+128
+129                <data
+129-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:39:17-42:51
+130                    android:host="firebase.auth"
+130-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:40:21-49
+131                    android:path="/"
+131-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:41:21-37
+132                    android:scheme="recaptcha" />
+132-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\248cee52f38e03cb1beead1c845450f2\transformed\firebase-auth-21.1.0\AndroidManifest.xml:42:21-48
+133            </intent-filter>
+134        </activity>
+135        <activity
+135-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\aliftafn\.gradle\caches\transforms-3\58ae6155e16badac2c81c8661d196ff0\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+136            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+136-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\aliftafn\.gradle\caches\transforms-3\58ae6155e16badac2c81c8661d196ff0\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+137            android:exported="false"
+137-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\aliftafn\.gradle\caches\transforms-3\58ae6155e16badac2c81c8661d196ff0\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+138            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+138-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\aliftafn\.gradle\caches\transforms-3\58ae6155e16badac2c81c8661d196ff0\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+139
+140        <provider
+140-->[com.google.firebase:firebase-common:20.2.0] C:\Users\aliftafn\.gradle\caches\transforms-3\11e6d13c3cdfc4e0f75f7b663ae9cb1e\transformed\firebase-common-20.2.0\AndroidManifest.xml:25:9-30:39
+141            android:name="com.google.firebase.provider.FirebaseInitProvider"
+141-->[com.google.firebase:firebase-common:20.2.0] C:\Users\aliftafn\.gradle\caches\transforms-3\11e6d13c3cdfc4e0f75f7b663ae9cb1e\transformed\firebase-common-20.2.0\AndroidManifest.xml:26:13-77
+142            android:authorities="com.c22_067.whatdishtoday.firebaseinitprovider"
+142-->[com.google.firebase:firebase-common:20.2.0] C:\Users\aliftafn\.gradle\caches\transforms-3\11e6d13c3cdfc4e0f75f7b663ae9cb1e\transformed\firebase-common-20.2.0\AndroidManifest.xml:27:13-72
+143            android:directBootAware="true"
+143-->[com.google.firebase:firebase-common:20.2.0] C:\Users\aliftafn\.gradle\caches\transforms-3\11e6d13c3cdfc4e0f75f7b663ae9cb1e\transformed\firebase-common-20.2.0\AndroidManifest.xml:28:13-43
+144            android:exported="false"
+144-->[com.google.firebase:firebase-common:20.2.0] C:\Users\aliftafn\.gradle\caches\transforms-3\11e6d13c3cdfc4e0f75f7b663ae9cb1e\transformed\firebase-common-20.2.0\AndroidManifest.xml:29:13-37
+145            android:initOrder="100" />
+145-->[com.google.firebase:firebase-common:20.2.0] C:\Users\aliftafn\.gradle\caches\transforms-3\11e6d13c3cdfc4e0f75f7b663ae9cb1e\transformed\firebase-common-20.2.0\AndroidManifest.xml:30:13-36
+146
+147        <meta-data
+147-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\f42a6ee7c9900b040bf19645d94d4656\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+148            android:name="com.google.android.gms.version"
+148-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\f42a6ee7c9900b040bf19645d94d4656\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+149            android:value="@integer/google_play_services_version" />
+149-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\aliftafn\.gradle\caches\transforms-3\f42a6ee7c9900b040bf19645d94d4656\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+150
+151        <provider
+151-->[androidx.emoji2:emoji2:1.2.0] C:\Users\aliftafn\.gradle\caches\transforms-3\7b8f967d56591d849829fda4a1c0b169\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+152            android:name="androidx.startup.InitializationProvider"
+152-->[androidx.emoji2:emoji2:1.2.0] C:\Users\aliftafn\.gradle\caches\transforms-3\7b8f967d56591d849829fda4a1c0b169\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+153            android:authorities="com.c22_067.whatdishtoday.androidx-startup"
+153-->[androidx.emoji2:emoji2:1.2.0] C:\Users\aliftafn\.gradle\caches\transforms-3\7b8f967d56591d849829fda4a1c0b169\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+154            android:exported="false" >
+154-->[androidx.emoji2:emoji2:1.2.0] C:\Users\aliftafn\.gradle\caches\transforms-3\7b8f967d56591d849829fda4a1c0b169\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+155            <meta-data
+155-->[androidx.emoji2:emoji2:1.2.0] C:\Users\aliftafn\.gradle\caches\transforms-3\7b8f967d56591d849829fda4a1c0b169\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+156                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+156-->[androidx.emoji2:emoji2:1.2.0] C:\Users\aliftafn\.gradle\caches\transforms-3\7b8f967d56591d849829fda4a1c0b169\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+157                android:value="androidx.startup" />
+157-->[androidx.emoji2:emoji2:1.2.0] C:\Users\aliftafn\.gradle\caches\transforms-3\7b8f967d56591d849829fda4a1c0b169\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+158            <meta-data
+158-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\aliftafn\.gradle\caches\transforms-3\42ea1bb4330a547229314ffacdb616c6\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+159                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+159-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\aliftafn\.gradle\caches\transforms-3\42ea1bb4330a547229314ffacdb616c6\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+160                android:value="androidx.startup" />
+160-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\aliftafn\.gradle\caches\transforms-3\42ea1bb4330a547229314ffacdb616c6\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+161        </provider>
+162    </application>
+163
+164</manifest>

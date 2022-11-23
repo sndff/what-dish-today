@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.c22_067.whatdishtoday.app-mergeDebugResources-33:/values-v16/values-v16.xml",
+            "outputFile": "com.c22_067.whatdishtoday.app-mergeDebugResources-39:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/home/saifer/.gradle/caches/transforms-3/86f96b00c7cb73def924c58d74ff7ebd/transformed/appcompat-1.5.1/res/values-v16/values-v16.xml",
+                    "source": "C:\\Users\\aliftafn\\.gradle\\caches\\transforms-3\\fc2def48eea104d49d2db7e64e3d4bc0\\transformed\\appcompat-1.5.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/home/saifer/.gradle/caches/transforms-3/fa579a56dc4a7f6c1402557455e44eec/transformed/core-1.8.0/res/values-v16/values-v16.xml",
+                    "source": "C:\\Users\\aliftafn\\.gradle\\caches\\transforms-3\\72b6258925e3e9dda746457c7d288d6b\\transformed\\core-1.8.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

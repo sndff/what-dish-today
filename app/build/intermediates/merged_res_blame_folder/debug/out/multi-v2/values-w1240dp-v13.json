@@ -1,16 +1,16 @@
 {
     "logs": [
         {
-            "outputFile": "com.c22_067.whatdishtoday.app-mergeDebugResources-33:/values-w1240dp-v13/values-w1240dp-v13.xml",
+            "outputFile": "com.c22_067.whatdishtoday.app-mergeDebugResources-39:/values-w1240dp-v13/values-w1240dp-v13.xml",
             "map": [
                 {
-                    "source": "/home/saifer/dev/projects/Dicoding-MSIB/Kotlin/what-dish-today/app/src/main/res/values-w1240dp/dimens.xml",
+                    "source": "C:\\Users\\aliftafn\\AndroidStudioProjects\\1_Caps disini\\what-dish-today\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",
-                        "startOffsets": "16",
+                        "startOffsets": "17",
                         "endColumns": "58",
-                        "endOffsets": "70"
+                        "endOffsets": "71"
                     },
                     "to": {
                         "startLines": "2",
