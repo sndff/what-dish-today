@@ -1,30 +1,24 @@
 package com.c22_067.whatdishtoday.network
 
-import com.dicoding.picodiploma.homerecipe.datasource.DetailMakanan
-import com.dicoding.picodiploma.homerecipe.datasource.Makanan
+import com.c22_067.whatdishtoday.network.responses.RecipesResponse
+import com.c22_067.whatdishtoday.data.DetailMakanan
+import com.c22_067.whatdishtoday.network.responses.DetailRecipeResponse
+import com.c22_067.whatdishtoday.network.responses.SearchRecipeResponse
 import com.dicoding.picodiploma.homerecipe.datasource.MakananSearch
 import retrofit2.Call
-import retrofit2.http.GET
-import retrofit2.http.Headers
-import retrofit2.http.Path
-import retrofit2.http.Query
+import retrofit2.http.*
 
 interface Api {
-    @GET("/api/search/?q={parameter}")
-    @Headers()
-    fun getSearchMakanan(
+    @GET("/api/search/")
+    fun findMakanan(
         @Query("q") query: String
-    ): Call<MakananSearch>
+    ): Call<SearchRecipeResponse>
 
-    @GET("/api/recipe/:{key}")
-    @Headers()
-    fun getMakananDetail(
-        @Path("username") username: String
-    ): Call<DetailMakanan>
+    @GET("/api/recipe/{key}") // dummy
+    fun getMakananDetail( // resep-sambal-teri-petai
+        @Path("key") param: String
+    ): Call<DetailRecipeResponse>
 
-    @GET("/api/category/recipes/:{key}")
-    @Headers()
-    fun getMakanan(
-        @Path("username") username: String
-    ): Call<ArrayList<Makanan>>
+    @GET("/api/recipes")
+    fun getMakanan(): Call<RecipesResponse>
 }

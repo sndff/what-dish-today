@@ -1,4 +1,4 @@
-package com.dicoding.picodiploma.homerecipe.datasource
+package com.c22_067.whatdishtoday.data
 
 data class DetailMakanan(
     val title: String,

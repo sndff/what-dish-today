@@ -1,4 +1,4 @@
-package com.c22_067.whatdishtoday.ui.home_fragment
+package com.c22_067.whatdishtoday.ui.home.home_fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -14,10 +14,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [HomeSopFragment.newInstance] factory method to
+ * Use the [HomeSayuranFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class HomeSopFragment : Fragment() {
+class HomeSayuranFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -35,7 +35,7 @@ class HomeSopFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home_sop, container, false)
+        return inflater.inflate(R.layout.fragment_home_sayuran, container, false)
     }
 
     companion object {
@@ -45,12 +45,12 @@ class HomeSopFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment HomeSopFragment.
+         * @return A new instance of fragment HomeSayuranFragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            HomeSopFragment().apply {
+            HomeSayuranFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

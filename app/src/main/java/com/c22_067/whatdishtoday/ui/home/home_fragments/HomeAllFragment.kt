@@ -1,4 +1,4 @@
-package com.c22_067.whatdishtoday.ui.home_fragment
+package com.c22_067.whatdishtoday.ui.home.home_fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -11,6 +11,8 @@ import com.c22_067.whatdishtoday.databinding.FragmentHomeAllBinding
 class HomeAllFragment : Fragment() {
     private lateinit var _binding: FragmentHomeAllBinding
     private val binding get() = _binding
+
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

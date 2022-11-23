@@ -27,25 +27,24 @@ class MakananAdapter : RecyclerView.Adapter<MakananAdapter.MakananViewHolder>() 
                 onItemClickCallback?.onItemClicked(makanan)
             }
             binding.apply {
-                tvDishName.text = makanan.key
-                imgDish. = makanan.thumb
-
+//                tvDishName.text = makanan.key
+//                imgDish. = makanan.thumb
             }
         }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MakananViewHolder {
         val view = ItemRvMainCategoryBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return UserViewHolder((view))
+        return MakananViewHolder((view))
     }
 
-    override fun onBindViewHolder(holder: UserViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: MakananViewHolder, position: Int) {
         holder.bind(list[position])
     }
 
     override fun getItemCount(): Int = list.size
 
     interface OnItemClickCallback {
-        fun onItemClicked(data: User)
+        fun onItemClicked(data: Makanan)
     }
 }
