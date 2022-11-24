@@ -43,10 +43,16 @@
     <string name="action_sign_in_short">Sign in</string>
     <string name="app_name">What Dish Today</string>
     <string name="content_tab_text">tab_text_%1$d</string>
+    <string name="default_web_client_id" translatable="false">74092129622-4bvvs84t689e5r0q5eq78bfd3udc20e5.apps.googleusercontent.com</string>
     <string name="deskripsi">Deskripsi</string>
     <string name="directions">Directions</string>
     <string name="dish_name">Dish Name</string>
     <string name="favorte">Favorite</string>
+    <string name="gcm_defaultSenderId" translatable="false">74092129622</string>
+    <string name="google_api_key" translatable="false">AIzaSyA5njiadfcsJ_BhPCivw4G3OFMOP19rwaU</string>
+    <string name="google_app_id" translatable="false">1:74092129622:android:3e978efca7fe5445773af7</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA5njiadfcsJ_BhPCivw4G3OFMOP19rwaU</string>
+    <string name="google_storage_bucket" translatable="false">test-2b9e1.appspot.com</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="ingredients">Ingridients</string>
     <string name="invalid_password">Password must be >5 characters</string>
@@ -54,6 +60,7 @@
     <string name="login_failed">"Login failed"</string>
     <string name="must_try">must try</string>
     <string name="photo">Foto</string>
+    <string name="project_id" translatable="false">test-2b9e1</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
     <string name="resep">Resep</string>
@@ -66,8 +73,10 @@
     <string name="tab_text_5">Camilan</string>
     <string name="tab_text_6">Sayuran</string>
     <string name="tab_text_7">Rendah Kalori</string>
+    <string name="title_activity_login_with_email">LoginWithEmail</string>
     <string name="txt_name">Name</string>
     <string name="welcome">"Welcome !"</string>
+    <string name="your_web_client_id">"AIzaSyD8QGaWB_Wea9_gpImcWqiWuXtLyoQbB0Q "</string>
     <style name="Theme.WhatDishToday" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">@color/purple_200</item>

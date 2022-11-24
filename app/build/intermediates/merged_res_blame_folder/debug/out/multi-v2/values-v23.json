@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.c22_067.whatdishtoday.app-mergeDebugResources-33:/values-v23/values-v23.xml",
+            "outputFile": "com.c22_067.whatdishtoday.app-mergeDebugResources-39:/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "/home/saifer/.gradle/caches/transforms-3/71230e517328ce697d91b19ad9753659/transformed/material-1.7.0/res/values-v23/values-v23.xml",
+                    "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-3\\5b95390addd39ff0624ca247d5a34231\\transformed\\material-1.7.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,5,8,13,17,20,23,26,31,34,38",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/home/saifer/.gradle/caches/transforms-3/86f96b00c7cb73def924c58d74ff7ebd/transformed/appcompat-1.5.1/res/values-v23/values-v23.xml",
+                    "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-3\\fc2def48eea104d49d2db7e64e3d4bc0\\transformed\\appcompat-1.5.1\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -34,7 +34,7 @@
                     }
                 },
                 {
-                    "source": "/home/saifer/.gradle/caches/transforms-3/127a7f4dbf902901579d57d306da8373/transformed/cardview-1.0.0/res/values-v23/values-v23.xml",
+                    "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-3\\e69b4f80a3748e5a90a227d32df7cabf\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

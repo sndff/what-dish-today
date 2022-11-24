@@ -3,10 +3,17 @@ package com.c22_067.whatdishtoday
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AlertDialog
 import com.c22_067.whatdishtoday.databinding.ActivityMainBinding
 import com.c22_067.whatdishtoday.ui.home.DetailRecipeActivity
 import com.c22_067.whatdishtoday.ui.home.HomeActivity
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInClient
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
+import com.google.android.gms.common.api.ApiException
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.GoogleAuthProvider
 
 
 class MainActivity : AppCompatActivity() {
@@ -38,5 +45,7 @@ class MainActivity : AppCompatActivity() {
             val i = Intent(this, HomeActivity::class.java)
             startActivity(i)
         }
+
     }
+
 }

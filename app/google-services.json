@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "74092129622",
+    "project_id": "test-2b9e1",
+    "storage_bucket": "test-2b9e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74092129622:android:3e978efca7fe5445773af7",
+        "android_client_info": {
+          "package_name": "com.c22_067.whatdishtoday"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "74092129622-4bvvs84t689e5r0q5eq78bfd3udc20e5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5njiadfcsJ_BhPCivw4G3OFMOP19rwaU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "74092129622-4bvvs84t689e5r0q5eq78bfd3udc20e5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

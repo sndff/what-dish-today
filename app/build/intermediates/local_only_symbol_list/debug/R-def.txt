@@ -49,6 +49,7 @@ font poppins_bold
 font poppins_regular
 id btn_email
 id btn_google
+id btn_home
 id btn_login
 id btn_register
 id button
@@ -95,9 +96,11 @@ id tv_must_try
 id username
 id view_pager
 layout activity_detail_menu
+layout activity_detail_recipe
 layout activity_favorite
 layout activity_home
 layout activity_login
+layout activity_login_with_email
 layout activity_main
 layout activity_menu_makanan
 layout activity_search
@@ -129,10 +132,16 @@ string action_sign_in
 string action_sign_in_short
 string app_name
 string content_tab_text
+string default_web_client_id
 string deskripsi
 string directions
 string dish_name
 string favorte
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string hello_blank_fragment
 string ingredients
 string invalid_password
@@ -140,6 +149,7 @@ string invalid_username
 string login_failed
 string must_try
 string photo
+string project_id
 string prompt_email
 string prompt_password
 string resep
@@ -152,8 +162,10 @@ string tab_text_4
 string tab_text_5
 string tab_text_6
 string tab_text_7
+string title_activity_login_with_email
 string txt_name
 string welcome
+string your_web_client_id
 style ThemeOverlay.Search
 style Theme.WhatDishToday
 xml backup_rules

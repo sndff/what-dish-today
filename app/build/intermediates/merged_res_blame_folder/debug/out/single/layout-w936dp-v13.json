@@ -1,6 +1,10 @@
 [
     {
-        "merged": "com.c22_067.whatdishtoday.app-mergeDebugResources-34:/layout-w936dp-v13/activity_login.xml",
-        "source": "com.c22_067.whatdishtoday.app-main-37:/layout-w936dp/activity_login.xml"
+        "merged": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-mergeDebugResources-40:\\layout-w936dp-v13\\activity_login.xml",
+        "source": "C:\\Users\\Fajar\\.gradle\\daemon\\7.4\\com.c22_067.whatdishtoday.app-main-43:\\layout-w936dp\\activity_login.xml"
+    },
+    {
+        "merged": "com.c22_067.whatdishtoday.app-mergeDebugResources-40:/layout-w936dp-v13/activity_login_with_email.xml",
+        "source": "com.c22_067.whatdishtoday.app-main-43:/layout-w936dp/activity_login_with_email.xml"
     }
 ]
