@@ -57,4 +57,17 @@ class HomeSayuranFragment : Fragment() {
                 }
             }
     }
+
+    fun launchFragment(): HomeSayuranFragment {
+        val fragment = HomeSayuranFragment()
+
+        val bundle = Bundle().apply {
+
+        }
+
+        fragment.arguments = bundle
+
+        return fragment
+    }
+
 }

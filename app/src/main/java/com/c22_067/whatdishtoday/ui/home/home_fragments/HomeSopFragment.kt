@@ -57,4 +57,17 @@ class HomeSopFragment : Fragment() {
                 }
             }
     }
+
+    fun launchFragment(): HomeSopFragment {
+        val fragment = HomeSopFragment()
+
+        val bundle = Bundle().apply {
+
+        }
+
+        fragment.arguments = bundle
+
+        return fragment
+    }
+
 }

@@ -3441,6 +3441,7 @@ id bounceEnd
 id bounceStart
 id btn_email
 id btn_google
+id btn_home
 id btn_login
 id btn_register
 id button
@@ -3560,6 +3561,7 @@ id give_us_a_review_landmine_button
 id give_us_a_review_landmine_main_layout
 id give_us_a_review_landmine_text_1
 id give_us_a_review_landmine_text_2
+id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
@@ -3990,6 +3992,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_detail_menu
+layout activity_detail_recipe
 layout activity_favorite
 layout activity_home
 layout activity_login

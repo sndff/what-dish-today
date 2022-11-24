@@ -5,6 +5,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.c22_067.whatdishtoday.network.Config
 import com.c22_067.whatdishtoday.network.responses.*
+import com.dicoding.picodiploma.homerecipe.datasource.Makanan
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -15,15 +16,15 @@ class HomeRepository {
     private val executorService : ExecutorService = Executors.newSingleThreadExecutor()
     // recipes
     private var getRecipes = MutableLiveData<List<ResultsRecipesItem?>>()
-    private val recipe: LiveData<List<ResultsRecipesItem?>> = getRecipes
+    val recipe: LiveData<List<ResultsRecipesItem?>> = getRecipes
     // detail recipes
     private var getDetailRecipes = MutableLiveData<ResultsDetail?>()
-    private val detail: LiveData<ResultsDetail?> = getDetailRecipes
+    val detail: LiveData<ResultsDetail?> = getDetailRecipes
     // search recipes
     private var findRecipes = MutableLiveData<ResultsSearchItem?>()
-    private val search: LiveData<ResultsSearchItem?> = findRecipes
+    val search: LiveData<ResultsSearchItem?> = findRecipes
 
-    fun getRecipes(){
+    fun getRecipes() {
         executorService.execute { recipes() }
     }
 
@@ -35,7 +36,7 @@ class HomeRepository {
         executorService.execute { find(param) }
     }
 
-    private fun detail(param: String) : LiveData<ResultsDetail?>{
+    private fun detail(param: String){
         val client = Config.getApiService().getMakananDetail(param)
         client.enqueue(object : Callback<DetailRecipeResponse> {
             override fun onResponse(
@@ -56,10 +57,9 @@ class HomeRepository {
                 Log.e("Error on Story Activity", "${t.message}")
             }
         })
-        return detail
     }
 
-    private fun recipes(): LiveData<List<ResultsRecipesItem?>> {
+    private fun recipes(){
         val client = Config.getApiService().getMakanan()
         client.enqueue(object : Callback<RecipesResponse> {
             override fun onResponse(
@@ -79,10 +79,9 @@ class HomeRepository {
                 Log.e("Error on Story Activity", "${t.message}")
             }
         })
-        return recipe
     }
 
-    private fun find(param: String): LiveData<ResultsSearchItem?> {
+    private fun find(param: String){
         val client = Config.getApiService().findMakanan(param)
         client.enqueue(object : Callback<SearchRecipeResponse> {
             override fun onResponse(
@@ -102,6 +101,5 @@ class HomeRepository {
                 Log.e("Error on Story Activity", "${t.message}")
             }
         })
-        return search
     }
 }

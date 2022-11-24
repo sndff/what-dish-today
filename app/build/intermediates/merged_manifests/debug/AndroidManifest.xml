@@ -8,6 +8,8 @@
         android:minSdkVersion="27"
         android:targetSdkVersion="32" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -22,6 +24,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.WhatDishToday" >
         <activity
+            android:name="com.c22_067.whatdishtoday.DetailRecipeActivity"
+            android:exported="false" />
+        <activity
             android:name="com.c22_067.whatdishtoday.MainActivity"
             android:exported="true" >
             <intent-filter>
@@ -35,7 +40,14 @@
             android:exported="false"
             android:parentActivityName="ui.menu.MenuMakananActivity" />
         <activity
-            android:name="com.c22_067.whatdishtoday.ui.HomeActivity"
+            android:name="com.c22_067.whatdishtoday.ui.home.HomeActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.c22_067.whatdishtoday.ui.home.DetailRecipeActivity"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
@@ -60,8 +72,7 @@
             android:exported="false" />
         <activity
             android:name="com.c22_067.whatdishtoday.ui.menu.MenuMakananActivity"
-            android:exported="false" >
-        </activity>
+            android:exported="false" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

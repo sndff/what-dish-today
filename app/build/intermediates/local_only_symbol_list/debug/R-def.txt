@@ -49,6 +49,7 @@ font poppins_bold
 font poppins_regular
 id btn_email
 id btn_google
+id btn_home
 id btn_login
 id btn_register
 id button
@@ -95,6 +96,7 @@ id tv_must_try
 id username
 id view_pager
 layout activity_detail_menu
+layout activity_detail_recipe
 layout activity_favorite
 layout activity_home
 layout activity_login

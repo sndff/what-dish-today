@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.c22_067.whatdishtoday.app-mergeDebugResources-33:/values-si/values-si.xml",
+            "outputFile": "com.c22_067.whatdishtoday.app-mergeDebugResources-34:/values-si/values-si.xml",
             "map": [
                 {
                     "source": "/home/saifer/.gradle/caches/transforms-3/86f96b00c7cb73def924c58d74ff7ebd/transformed/appcompat-1.5.1/res/values-si/values-si.xml",

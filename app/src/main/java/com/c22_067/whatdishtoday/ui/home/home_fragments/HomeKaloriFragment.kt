@@ -57,4 +57,17 @@ class HomeKaloriFragment : Fragment() {
                 }
             }
     }
+
+    fun launchFragment(): HomeKaloriFragment {
+        val fragment = HomeKaloriFragment()
+
+        val bundle = Bundle().apply {
+
+        }
+
+        fragment.arguments = bundle
+
+        return fragment
+    }
+
 }

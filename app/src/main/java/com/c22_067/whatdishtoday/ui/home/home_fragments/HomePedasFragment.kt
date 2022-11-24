@@ -57,4 +57,17 @@ class HomePedasFragment : Fragment() {
                 }
             }
     }
+
+    fun launchFragment(): HomePedasFragment {
+        val fragment = HomePedasFragment()
+
+        val bundle = Bundle().apply {
+
+        }
+
+        fragment.arguments = bundle
+
+        return fragment
+    }
+
 }

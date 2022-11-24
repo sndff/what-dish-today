@@ -57,4 +57,16 @@ class HomeCamilanFragment : Fragment() {
                 }
             }
     }
+
+    fun launchFragment(): HomeCamilanFragment {
+        val fragment = HomeCamilanFragment()
+
+        val bundle = Bundle().apply {
+
+        }
+
+        fragment.arguments = bundle
+
+        return fragment
+    }
 }
