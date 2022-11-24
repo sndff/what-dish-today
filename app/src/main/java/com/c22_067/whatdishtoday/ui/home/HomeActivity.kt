@@ -9,7 +9,7 @@ import androidx.viewpager2.widget.ViewPager2
 import com.c22_067.whatdishtoday.R
 import com.c22_067.whatdishtoday.adapter.SectionsPagerAdapter
 import com.c22_067.whatdishtoday.databinding.ActivityHomeBinding
-import com.c22_067.whatdishtoday.ui.home.home_fragments.HomeViewModel
+import com.c22_067.whatdishtoday.model.HomeViewModel
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 

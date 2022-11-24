@@ -1,4 +1,4 @@
-package com.c22_067.whatdishtoday.data
+package com.c22_067.whatdishtoday.model
 
 data class DetailMakanan(
     val title: String,

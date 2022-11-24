@@ -1,4 +1,4 @@
-package com.c22_067.whatdishtoday.ui.home.home_fragments
+package com.c22_067.whatdishtoday.model
 
 import androidx.lifecycle.ViewModel
 import com.c22_067.whatdishtoday.network.repository.HomeRepository

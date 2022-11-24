@@ -1,4 +1,4 @@
-package com.dicoding.picodiploma.homerecipe.datasource
+package com.c22_067.whatdishtoday.model
 
 data class Makanan(
     val key: String,

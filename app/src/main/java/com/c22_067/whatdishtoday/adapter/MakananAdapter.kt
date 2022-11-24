@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.c22_067.whatdishtoday.databinding.ItemRvMainCategoryBinding
-import com.dicoding.picodiploma.homerecipe.datasource.Makanan
+import com.c22_067.whatdishtoday.model.Makanan
 
 class MakananAdapter : RecyclerView.Adapter<MakananAdapter.MakananViewHolder>() {
     private val list = ArrayList<Makanan>()
