@@ -46,6 +46,6 @@
         <item>@drawable/dish</item>
     </integer-array>
     <!-- Strings related to Login Activity -->
-    <string name="your_web_client_id">"AIzaSyD8QGaWB_Wea9_gpImcWqiWuXtLyoQbB0Q "</string>
+    <string name="your_web_client_id">""</string>
     <string name="title_activity_login_with_email">LoginWithEmail</string>
 </resources>
