@@ -10,6 +10,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.c22_067.whatdishtoday.R
 import com.c22_067.whatdishtoday.model.ModelKategori
+import com.c22_067.whatdishtoday.ui.home.HomeActivity
 
 class KategoriAdapter(private val context: Context, private val modelCategories: List<ModelKategori>) :
         RecyclerView.Adapter<KategoriAdapter.ViewHolder>() {
@@ -23,8 +24,8 @@ class KategoriAdapter(private val context: Context, private val modelCategories:
         val data = modelCategories[position]
         holder.tvCategories.text = data.strKategori
         holder.relativeCategories.setOnClickListener {
-            val intent = Intent(context, ListKategoriActivity::class.java)
-            intent.putExtra(ListKategoriActivity.LIST_CATEGORIES, modelCategories[position])
+            val intent = Intent(context, HomeActivity::class.java)
+            intent.putExtra(HomeActivity.LIST_CATEGORIES, modelCategories[position])
             context.startActivity(intent)
         }
     }

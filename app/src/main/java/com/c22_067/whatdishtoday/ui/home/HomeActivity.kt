@@ -1,54 +1,98 @@
 package com.c22_067.whatdishtoday.ui.home
 
-import androidx.appcompat.app.AppCompatActivity
+import android.app.Activity
 import android.os.Bundle
-import android.view.WindowManager
-import androidx.annotation.StringRes
-import androidx.lifecycle.ViewModelProvider
-import androidx.viewpager2.widget.ViewPager2
+import android.view.MenuItem
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.c22_067.whatdishtoday.R
-import com.c22_067.whatdishtoday.adapter.SectionsPagerAdapter
-import com.c22_067.whatdishtoday.databinding.ActivityHomeBinding
-import com.c22_067.whatdishtoday.model.HomeViewModel
-import com.google.android.material.tabs.TabLayout
-import com.google.android.material.tabs.TabLayoutMediator
+import com.c22_067.whatdishtoday.adapter.ListKategoriAdapter
+import com.c22_067.whatdishtoday.model.ModelKategori
+import com.c22_067.whatdishtoday.model.ModelMakanan
+import com.c22_067.whatdishtoday.network.Config
+import org.json.JSONException
+import org.json.JSONObject
+import java.util.*
 
 class HomeActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityHomeBinding
-    private var viewModel = HomeViewModel()
+
+    var modelKategori: ModelKategori? = null
+    var modelKategoriList: MutableList<ModelMakanan> = ArrayList()
+    var listKategoriAdapter: ListKategoriAdapter? = null
+    var strKategoriKey: String? = null
+    var strKategori: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityHomeBinding.inflate(layoutInflater)
-        setContentView(binding.root)
 
-        viewModel = ViewModelProvider(this)[HomeViewModel::class.java]
+        setContentView(R.layout.activity_home)
 
-        viewModel.getAllRecipes()
-        viewModel.getDetail()
-        viewModel.findRecipe()
+        listKategoriAdapter = ListKategoriAdapter(this, modelKategoriList)
+        rv_makanan.setLayoutManager(LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false))
+        rvMakanan.setHasFixedSize(true)
+        rvMakanan.setAdapter(listKategoriAdapter)
+        rvMakanan.showShimmerAdapter()
 
-        this.window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN)
+        modelKategori = intent.getSerializableExtra(LIST_KATEGORI) as ModelKategori
+        if (modelKategori != null) {
+            strKategoriKey = modelKategori?.strKategoriKey
+            strKategori = modelKategori?.strKategori
+            tvTitleMakanan.setText(strKategori)
 
-        val sectionsPagerAdapter = SectionsPagerAdapter(this)
-        val viewPager: ViewPager2 = findViewById(R.id.view_pager)
-        viewPager.adapter = sectionsPagerAdapter
-        val tabs: TabLayout = findViewById(R.id.tabs)
-        TabLayoutMediator(tabs, viewPager) { tab, position ->
-            tab.text = resources.getString(TAB_TITLES[position])
-        }.attach()
-        supportActionBar?.elevation = 0f
+            //method get kategori
+            getListKategori()
+        }
     }
+
+    private fun getListKategori() {
+        AndroidNetworking.get(Config.BASEURL + Config.LIST_CATEGORIES)
+            .addPathParameter("key", strKategoriKey)
+            .setPriority(Priority.MEDIUM)
+            .build()
+            .getAsJSONObject(object : JSONObjectRequestListener {
+                override fun onResponse(response: JSONObject) {
+                    try {
+                        val jsonArray = response.getJSONArray("results")
+                        for (i in 0 until jsonArray.length()) {
+                            val jsonObjectList = jsonArray.getJSONObject(i)
+                            val dataApi = ModelMakanan()
+                            dataApi.strTitleResep = jsonObjectList.getString("title")
+                            dataApi.strThumbnail = jsonObjectList.getString("thumb")
+                            dataApi.strKeyResep = jsonObjectList.getString("key")
+                            modelKategoriList.add(dataApi)
+                        }
+                        listKategoriAdapter?.notifyDataSetChanged()
+//                        rvListCategories.hideShimmerAdapter()
+                    } catch (e: JSONException) {
+                        e.printStackTrace()
+                        Toast.makeText(this@HomeActivity,
+                            "Gagal menampilkan resep masakan.", Toast.LENGTH_SHORT).show()
+                    }
+                }
+            })
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == android.R.id.home) {
+            finish()
+            return true
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
     companion object {
-        @StringRes
-        private val TAB_TITLES = intArrayOf(
-            R.string.tab_text_1,
-            R.string.tab_text_2,
-            R.string.tab_text_3,
-            R.string.tab_text_4,
-            R.string.tab_text_5,
-            R.string.tab_text_6,
-            R.string.tab_text_7,
-        )
+        const val LIST_KATEGORI = "strListKategori"
+        fun setWindowFlag(activity: Activity, bits: Int, on: Boolean) {
+            val window = activity.window
+            val layoutParams = window.attributes
+            if (on) {
+                layoutParams.flags = layoutParams.flags or bits
+            } else {
+                layoutParams.flags = layoutParams.flags and bits.inv()
+            }
+            window.attributes = layoutParams
+        }
     }
+
 }
