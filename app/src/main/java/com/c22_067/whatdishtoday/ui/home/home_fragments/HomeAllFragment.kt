@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.c22_067.whatdishtoday.adapter.MakananAdapter
+import com.c22_067.whatdishtoday.adapter.RecipeListsAdapter
 import com.c22_067.whatdishtoday.databinding.FragmentHomeAllBinding
 
 class HomeAllFragment : Fragment() {
@@ -32,7 +32,7 @@ class HomeAllFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val result = viewModel.getAllRecipes()
-        binding.rvMainCategory.adapter = MakananAdapter(requireContext(), result)
+        binding.rvMainCategory.adapter = RecipeListsAdapter(requireContext(), result)
     }
 
     fun launchFragment(): HomeAllFragment {

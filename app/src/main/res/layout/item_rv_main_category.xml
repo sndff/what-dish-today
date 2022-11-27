@@ -22,7 +22,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/img_dish"
+                android:id="@+id/iv__dish"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="-20dp"
@@ -32,7 +32,7 @@
                 android:contentDescription="@string/photo" />
 
             <TextView
-                android:id="@+id/tv_dish_name"
+                android:id="@+id/tv_main_dish_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Dish Name"

@@ -15,14 +15,14 @@ import java.util.concurrent.Executors
 class HomeRepository {
     private val executorService : ExecutorService = Executors.newSingleThreadExecutor()
     // recipes
-    private var getRecipes = MutableLiveData<List<ResultsRecipesItem?>>()
-    val recipe: LiveData<List<ResultsRecipesItem?>> = getRecipes
+    private var _recipe = MutableLiveData<List<ResultsRecipesItem?>>()
+    val recipe: LiveData<List<ResultsRecipesItem?>> = _recipe
     // detail recipes
-    private var getDetailRecipes = MutableLiveData<ResultsDetail?>()
-    val detail: LiveData<ResultsDetail?> = getDetailRecipes
+    private var _detail = MutableLiveData<ResultsDetail?>()
+    val detail: LiveData<ResultsDetail?> = _detail
     // search recipes
-    private var findRecipes = MutableLiveData<ResultsSearchItem?>()
-    val search: LiveData<ResultsSearchItem?> = findRecipes
+    private var _search = MutableLiveData<List<ResultsSearchItem?>?>()
+    val search: LiveData<List<ResultsSearchItem?>?> = _search
 
     fun getRecipes() {
         executorService.execute { recipes() }
@@ -45,7 +45,7 @@ class HomeRepository {
             ) {
                 if (response.isSuccessful) {
                     if (response.body() != null) {
-                        getDetailRecipes.value = response.body()!!.results
+                        _detail.value = response.body()!!.results
                     }
 
                 } else {
@@ -68,7 +68,7 @@ class HomeRepository {
             ) {
                 if (response.isSuccessful) {
                     if (response.body() != null) {
-                        getRecipes.value = response.body()?.results!!
+                        _recipe.value = response.body()?.results!!
                     }
                 } else {
 //                    binding.progressBar.visibility = View.GONE
@@ -90,7 +90,7 @@ class HomeRepository {
             ) {
                 if (response.isSuccessful) {
                     if (response.body() != null) {
-//                        getRecipes.value = response.body().results
+                        _search.value = response.body()!!.results
                     }
                 } else {
 //                    binding.progressBar.visibility = View.GONE
