@@ -5,5 +5,10 @@
     android:layout_height="match_parent"
     tools:context=".ui.detail.IngridientsFragment">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_detail_ingridients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
 
 </FrameLayout>

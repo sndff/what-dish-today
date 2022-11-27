@@ -12,7 +12,7 @@ import retrofit2.Response
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 
-class HomeRepository {
+class MainRepository {
     private val executorService : ExecutorService = Executors.newSingleThreadExecutor()
     // recipes
     private var _recipe = MutableLiveData<List<ResultsRecipesItem?>>()

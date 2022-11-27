@@ -1,12 +1,11 @@
 package com.c22_067.whatdishtoday.ui.detail
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Toast
 import androidx.annotation.StringRes
+import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
 import com.c22_067.whatdishtoday.R
 import com.c22_067.whatdishtoday.databinding.ActivityDetailMenuBinding
@@ -22,6 +21,8 @@ class DetailMenuActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailMenuBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val key = intent.getStringExtra("key")
 
 //        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         val actionbar = supportActionBar
@@ -61,6 +62,7 @@ class DetailMenuActivity : AppCompatActivity() {
     }
 
     companion object {
+        const val KEY = "key"
         @StringRes
         private val TAB_TITLES = intArrayOf(
             R.string.ingredients,

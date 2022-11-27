@@ -17,7 +17,7 @@
         <entry key="app/src/main/res/layout/activity_detail_menu.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_detail_recipe.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_favorite.xml" value="0.17028985507246377" />
-        <entry key="app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.21875" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.21875" />
         <entry key="app/src/main/res/layout/activity_menu_makanan.xml" value="0.17028985507246377" />
@@ -26,10 +26,12 @@
         <entry key="app/src/main/res/layout/fragment_experiment.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_home_all.xml" value="0.17028985507246377" />
         <entry key="app/src/main/res/layout/fragment_home_camilan.xml" value="0.17028985507246377" />
+        <entry key="app/src/main/res/layout/fragment_ingridients.xml" value="0.1" />
         <entry key="app/src/main/res/layout/item_experiment.xml" value="0.5" />
         <entry key="app/src/main/res/layout/item_favorite.xml" value="0.21927083333333333" />
         <entry key="app/src/main/res/layout/item_rv_main_category.xml" value="0.1" />
         <entry key="app/src/main/res/layout/item_rv_sub_category.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/list_item_kategori.xml" value="0.14114583333333333" />
         <entry key="app/src/main/res/layout/popup_login.xml" value="0.1" />
         <entry key="app/src/main/res/layout/popup_register.xml" value="0.1" />
         <entry key="app/src/main/res/layout/resep.xml" value="0.2" />

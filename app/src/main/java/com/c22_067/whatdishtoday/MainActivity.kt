@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import com.c22_067.whatdishtoday.databinding.ActivityMainBinding
-import com.c22_067.whatdishtoday.ui.home.DetailRecipeActivity
 import com.c22_067.whatdishtoday.ui.home.HomeActivity
 
 
