@@ -45,4 +45,7 @@
         <item>@drawable/dish</item>
         <item>@drawable/dish</item>
     </integer-array>
+
+    <string name="send_success">Berhasil terkirim</string>
+    <string name="send_error">Gagal terkirim</string>
 </resources>

@@ -5,13 +5,20 @@
     android:layout_height="match_parent"
     tools:context=".ui.detail.ReviewFragment">
 
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_resep"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:transitionName="data"
         tools:listitem="@layout/review" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -53,4 +60,7 @@
             android:enabled="false"
             android:src="@drawable/ic_send" />
     </LinearLayout>
+
+
+
 </RelativeLayout>

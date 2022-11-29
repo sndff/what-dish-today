@@ -16,6 +16,9 @@
         android:theme="@style/Theme.WhatDishToday"
         tools:targetApi="31">
         <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".DetailRecipeActivity"
             android:exported="false" />
         <activity
@@ -64,7 +67,7 @@
             android:exported="false" />
         <activity
             android:name=".ui.menu.MenuMakananActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
     </application>
 
 </manifest>
