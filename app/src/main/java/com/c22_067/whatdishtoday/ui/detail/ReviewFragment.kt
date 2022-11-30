@@ -50,15 +50,15 @@ class ReviewFragment : Fragment() {
             )
             messagesRef.push().setValue(friendlyReview) { error, _ ->
                 if (error != null) {
-                    Toast.makeText(this, getString(R.string.send_error) + error.message, Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, getString(R.string.send_error) + error.message, Toast.LENGTH_SHORT).show()
                 } else {
-                    Toast.makeText(this, getString(R.string.send_success), Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, getString(R.string.send_success), Toast.LENGTH_SHORT).show()
                 }
             }
             binding.messageEditText.setText("")
         }
 
-        val manager = LinearLayoutManager(this)
+        val manager = LinearLayoutManager(context)
         manager.stackFromEnd = true
         binding.rvResep.layoutManager = manager
 

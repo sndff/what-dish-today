@@ -34,10 +34,6 @@ class ReviewAdapter(
                 .load(item.photoUrl)
                 .circleCrop()
                 .into(binding.imgItemProfil)
-            Glide.with(itemView.context)
-                .load(item.photoUrl)
-                .circleCrop()
-                .into(binding.imgItemPhoto)
             binding.tvItemDescription.text = item.name
             setTextColor(item.name, binding.tvItemDescription)
         }
