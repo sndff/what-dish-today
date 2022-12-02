@@ -4,11 +4,13 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import androidx.activity.viewModels
 import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
 import com.c22_067.whatdishtoday.R
 import com.c22_067.whatdishtoday.databinding.ActivityDetailMenuBinding
+import com.c22_067.whatdishtoday.databinding.FragmentDirectionsBinding
 import com.c22_067.whatdishtoday.ui.menu.MenuMakananActivity
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
@@ -16,21 +18,22 @@ import com.google.android.material.tabs.TabLayoutMediator
 class DetailMenuActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityDetailMenuBinding
+    private lateinit var bindingDirections: FragmentDirectionsBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailMenuBinding.inflate(layoutInflater)
+        bindingDirections = FragmentDirectionsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val key = intent.getStringExtra("key")
 
-//        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         val actionbar = supportActionBar
         actionbar?.setDisplayHomeAsUpEnabled(true)
         actionbar?.setDisplayHomeAsUpEnabled(true)
 
-        val sectionsPagerAdapter = SectionsPagerAdapter(this)
-        val viewPager: ViewPager2 = findViewById(R.id.view_pager)
+        val sectionsPagerAdapter = SectionsPagerAdapter(this, key)
+        val viewPager: ViewPager2 = binding.viewPager
         viewPager.adapter = sectionsPagerAdapter
         val tabs: TabLayout = findViewById(R.id.tabs)
         TabLayoutMediator(tabs, viewPager) { tab, position ->
