@@ -44,6 +44,7 @@ class ReviewFragment : Fragment() {
         binding.sendButton.setOnClickListener {
             val friendlyReview = Review(
                 binding.messageEditText.text.toString(),
+//                firebaseUser?.tenantId.toString(),
                 firebaseUser?.displayName.toString(),
                 firebaseUser?.photoUrl.toString(),
                 Date().time

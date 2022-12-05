@@ -1,5 +1,6 @@
 package com.c22_067.whatdishtoday.ui.detail.adapter
 
+import android.text.format.DateUtils
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
@@ -29,13 +30,14 @@ class ReviewAdapter(
 
     inner class ReviewViewHolder(private val binding: ReviewBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(item: Review) {
-            binding.tvItemName.text = item.text
+            binding.tvItemName.text = item.name
             Glide.with(itemView.context)
                 .load(item.photoUrl)
                 .circleCrop()
                 .into(binding.imgItemProfil)
-            binding.tvItemDescription.text = item.name
-            setTextColor(item.name, binding.tvItemDescription)
+            binding.tvItemDescription.text = item.text
+            setTextColor(item.text, binding.tvItemDescription)
+            binding.tvTimestamp.text = item.timestamp?.let { DateUtils.getRelativeTimeSpanString(it) }
         }
 
         private fun setTextColor(userName: String?, textView: TextView) {
