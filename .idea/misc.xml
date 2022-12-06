@@ -27,6 +27,7 @@
         <entry key="app/src/main/res/layout/fragment_home_all.xml" value="0.17028985507246377" />
         <entry key="app/src/main/res/layout/fragment_home_camilan.xml" value="0.17028985507246377" />
         <entry key="app/src/main/res/layout/fragment_ingridients.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/item_direction.xml" value="0.1" />
         <entry key="app/src/main/res/layout/item_experiment.xml" value="0.5" />
         <entry key="app/src/main/res/layout/item_favorite.xml" value="0.21927083333333333" />
         <entry key="app/src/main/res/layout/item_rv_main_category.xml" value="0.1" />

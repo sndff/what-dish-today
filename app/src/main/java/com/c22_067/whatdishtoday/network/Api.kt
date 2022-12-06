@@ -1,10 +1,8 @@
 package com.c22_067.whatdishtoday.network
 
 import com.c22_067.whatdishtoday.network.responses.RecipesResponse
-import com.c22_067.whatdishtoday.data.DetailMakanan
 import com.c22_067.whatdishtoday.network.responses.DetailRecipeResponse
 import com.c22_067.whatdishtoday.network.responses.SearchRecipeResponse
-import com.dicoding.picodiploma.homerecipe.datasource.MakananSearch
 import retrofit2.Call
 import retrofit2.http.*
 

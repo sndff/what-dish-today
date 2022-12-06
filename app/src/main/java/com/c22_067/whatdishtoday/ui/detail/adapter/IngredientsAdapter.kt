@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.c22_067.whatdishtoday.network.responses.ResultsDetail
 
-class IngridientsAdapter(context: Context, private val data: ResultsDetail) : RecyclerView.Adapter<IngridientsAdapter.ViewHolder>(){
+class IngredientsAdapter(context: Context, private val data: ResultsDetail) : RecyclerView.Adapter<IngredientsAdapter.ViewHolder>(){
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
 
     }

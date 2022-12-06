@@ -4,16 +4,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.c22_067.whatdishtoday.databinding.FragmentDirectionsBinding
-import kotlinx.coroutines.NonDisposableHandle.parent
+import com.c22_067.whatdishtoday.databinding.FragmentIngredientsBinding
 
-class StepAdapter(private val data: List<String?>?) : RecyclerView.Adapter<StepAdapter.ViewHolder>() {
+class IngredientsAdapter(private val data: List<String?>?) : RecyclerView.Adapter<IngredientsAdapter.ViewHolder>() {
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val binding = FragmentDirectionsBinding.inflate(LayoutInflater.from(parent.context),parent, false)
+        val binding = FragmentIngredientsBinding.inflate(LayoutInflater.from(parent.context),parent, false)
         return ViewHolder(binding.root)
     }
 

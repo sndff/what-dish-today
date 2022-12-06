@@ -6,31 +6,28 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.activityViewModels
-import androidx.lifecycle.ViewModelProvider
-import com.c22_067.whatdishtoday.R
-import com.c22_067.whatdishtoday.databinding.FragmentDirectionsBinding
+import com.c22_067.whatdishtoday.databinding.FragmentIngredientsBinding
 
-class DirectionsFragment : Fragment() {
+class IngredientsFragment : Fragment() {
 
-    private lateinit var binding: FragmentDirectionsBinding
+    private lateinit var binding: FragmentIngredientsBinding
     private val viewModel: DetailViewModel by activityViewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = FragmentDirectionsBinding.inflate(LayoutInflater.from(context))
+        binding = FragmentIngredientsBinding.inflate(LayoutInflater.from(context))
         val key = requireArguments().getString("key")
         binding.progressBar.visibility = View.VISIBLE
         viewModel.getDetail(key!!)
         viewModel.repository.detail.observeForever { detail ->
             val builder = SpannableStringBuilder()
             if (detail != null) {
-                detail.step?.forEach { steps ->
-                    builder.append(steps + "\n")
+                detail.ingredient?.forEach { ingredient ->
+                    builder.append(ingredient + "\n")
                 }
             }
-            binding.tvSteps.text = builder
+            binding.tvIngredients.text = builder
             binding.progressBar.visibility = View.GONE
         }
     }
@@ -38,13 +35,13 @@ class DirectionsFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         return binding.root
     }
 
-    fun launchFragment(key: String?): DirectionsFragment {
-        val fragment = DirectionsFragment()
+    fun launchFragment(key: String?): IngredientsFragment {
+        val fragment = IngredientsFragment()
         val bundle = Bundle().apply {
             putString("key", key)
         }

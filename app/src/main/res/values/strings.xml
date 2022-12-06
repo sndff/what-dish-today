@@ -31,6 +31,7 @@
     <string name="txt_name">Name</string>
     <string name="must_try">must try</string>
     <string name="see_all">see all</string>
+    <string name="avatar">avatar</string>
     <string-array name="data_name">
         <item>Chicken Katsu</item>
         <item>Chicken Teriyaki</item>

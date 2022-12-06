@@ -5,7 +5,6 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.c22_067.whatdishtoday.network.Config
 import com.c22_067.whatdishtoday.network.responses.*
-import com.dicoding.picodiploma.homerecipe.datasource.Makanan
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
