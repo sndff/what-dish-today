@@ -1,8 +1,11 @@
-package com.c22_067.whatdishtoday.ui.detail
+package com.c22_067.whatdishtoday.ui.detail.adapter
 
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import com.c22_067.whatdishtoday.ui.detail.fragment.DirectionsFragment
+import com.c22_067.whatdishtoday.ui.detail.fragment.IngredientsFragment
+import com.c22_067.whatdishtoday.ui.detail.fragment.ReviewFragment
 
 class SectionsPagerAdapter(activity: AppCompatActivity, private val key: String?) : FragmentStateAdapter(activity) {
 

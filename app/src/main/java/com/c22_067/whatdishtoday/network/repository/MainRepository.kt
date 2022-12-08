@@ -27,7 +27,7 @@ class MainRepository {
         executorService.execute { recipes() }
     }
 
-    fun getDetailRecipes(param: String){
+    fun  getDetailRecipes(param: String){
         executorService.execute { detail(param) }
     }
 

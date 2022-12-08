@@ -1,4 +1,4 @@
-package com.c22_067.whatdishtoday.ui.detail
+package com.c22_067.whatdishtoday.ui.detail.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater

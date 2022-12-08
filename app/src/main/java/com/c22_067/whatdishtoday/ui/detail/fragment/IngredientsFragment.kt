@@ -1,4 +1,4 @@
-package com.c22_067.whatdishtoday.ui.detail
+package com.c22_067.whatdishtoday.ui.detail.fragment
 
 import android.os.Bundle
 import android.text.SpannableStringBuilder
@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import com.c22_067.whatdishtoday.databinding.FragmentIngredientsBinding
+import com.c22_067.whatdishtoday.ui.detail.DetailViewModel
 
 class IngredientsFragment : Fragment() {
 

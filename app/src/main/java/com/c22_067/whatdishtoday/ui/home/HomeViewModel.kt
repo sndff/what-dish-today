@@ -7,13 +7,12 @@ import android.widget.AdapterView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModel
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.c22_067.whatdishtoday.adapter.RecipeListsAdapter
+import com.c22_067.whatdishtoday.ui.home.adapter.RecipeListsAdapter
 import com.c22_067.whatdishtoday.databinding.ActivityHomeBinding
 import com.c22_067.whatdishtoday.network.repository.MainRepository
 import com.c22_067.whatdishtoday.network.responses.ResultsRecipesItem
-import com.c22_067.whatdishtoday.ui.detail.DetailMenuActivity
+import com.c22_067.whatdishtoday.ui.detail.activity.DetailMenuActivity
 
 class HomeViewModel : ViewModel() {
     private val repository = MainRepository()

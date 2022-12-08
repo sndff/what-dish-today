@@ -31,7 +31,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.detail.DetailMenuActivity"
+            android:name="com.c22_067.whatdishtoday.ui.detail.activity.DetailMenuActivity"
             android:exported="false"
             android:parentActivityName="ui.menu.MenuMakananActivity" />
         <activity

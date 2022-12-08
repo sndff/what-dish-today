@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.detail.ReviewFragment">
+    tools:context=".ui.detail.fragment.ReviewFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_resep"
@@ -17,8 +17,7 @@
         style="?android:attr/progressBarStyleLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true" />
+        android:layout_centerInParent="true" />
 
     <LinearLayout
         android:id="@+id/linearLayout"

@@ -1,16 +1,13 @@
-package com.c22_067.whatdishtoday.ui.detail
+package com.c22_067.whatdishtoday.ui.detail.activity
 
-import android.content.Intent
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
 import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
 import com.c22_067.whatdishtoday.R
 import com.c22_067.whatdishtoday.databinding.ActivityDetailMenuBinding
 import com.c22_067.whatdishtoday.databinding.FragmentDirectionsBinding
-import com.c22_067.whatdishtoday.ui.menu.MenuMakananActivity
+import com.c22_067.whatdishtoday.ui.detail.adapter.SectionsPagerAdapter
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
@@ -44,23 +41,6 @@ class DetailMenuActivity : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
         return true
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        val inflater = menuInflater
-        inflater.inflate(R.menu.menu, menu)
-        return true
-    }
-
-    override fun onOptionsItemSelected(item : MenuItem): Boolean{
-        return when (item.itemId) {
-            R.id.favorite ->{
-                val i = Intent(this, MenuMakananActivity::class.java)
-                startActivity(i)
-                return true
-            }
-            else -> true
-        }
     }
 
     companion object {

@@ -13,7 +13,7 @@
     <string name="ingredients">Ingridients</string>
     <string name="directions">Directions</string>
     <string name="review">Review</string>
-    <string name="resep">Resep</string>
+    <string name="step">Step</string>
     <string name="deskripsi">Deskripsi</string>
     <!-- Strings related to Home Activity -->
     <string name="tab_text_1">All</string>

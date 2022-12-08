@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.detail.IngredientsFragment">
+    tools:context=".ui.detail.fragment.IngredientsFragment">
 
     <TextView
         android:id="@+id/tv_ingredients"
@@ -14,6 +14,14 @@
         android:fontFamily="@font/poppins_regular"
         android:textSize="16sp"
         android:transitionName="data" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_ingredients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:transitionName="data"
+        tools:listitem="@layout/resep"
+        tools:ignore="MissingConstraints" />
 
     <com.google.android.material.progressindicator.CircularProgressIndicator
         android:id="@+id/progressBar"

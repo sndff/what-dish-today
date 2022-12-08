@@ -1,20 +1,23 @@
 package com.c22_067.whatdishtoday.ui.favorite
 
-import android.annotation.SuppressLint
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.c22_067.whatdishtoday.R
+import com.c22_067.whatdishtoday.databinding.ActivityFavoriteBinding
 
 class FavoriteActivity : AppCompatActivity() {
 
     private lateinit var rvfavorite : RecyclerView
     private val list = ArrayList<TempFavorite>()
 
+    private lateinit var binding: ActivityFavoriteBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_favorite)
+        binding = ActivityFavoriteBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         rvfavorite = findViewById(R.id.rv_favorite)
         rvfavorite.setHasFixedSize(true)
