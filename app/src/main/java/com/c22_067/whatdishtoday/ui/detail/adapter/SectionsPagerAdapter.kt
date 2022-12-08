@@ -11,13 +11,14 @@ class SectionsPagerAdapter(activity: AppCompatActivity, private val key: String?
 
     private val direction = DirectionsFragment()
     private val ingredients = IngredientsFragment()
+    private val review = ReviewFragment()
 
     override fun createFragment(position: Int): Fragment {
         var fragment: Fragment? = null
         when (position) {
             0 -> fragment = ingredients.launchFragment(key)
             1 -> fragment = direction.launchFragment(key)
-            2 -> fragment = ReviewFragment()
+            2 -> fragment = review.launchFragment(key)
         }
         return fragment as Fragment
     }

@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "1004019989532",
+    "firebase_url": "https://what-dish-today-26a54-default-rtdb.firebaseio.com",
+    "project_id": "what-dish-today-26a54",
+    "storage_bucket": "what-dish-today-26a54.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1004019989532:android:ef87340a2a213087caf3d9",
+        "android_client_info": {
+          "package_name": "com.c22_067.whatdishtoday"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1004019989532-61p88ovea00712jr15ch90qlkarbr953.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.c22_067.whatdishtoday",
+            "certificate_hash": "11d630ef03891891edd990d9002d0d79bc44cc44"
+          }
+        },
+        {
+          "client_id": "1004019989532-mrojnnmhh7p1hffhv61dulc7rb63iatn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.c22_067.whatdishtoday",
+            "certificate_hash": "860b8c2576b34e2698f03fefe77e80339d435230"
+          }
+        },
+        {
+          "client_id": "1004019989532-6fjcjijedupred84ri1qjv15rmd5n3pd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAacfOaYD9BtvbE_fEEzQrKCS7U8_X21R8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1004019989532-6fjcjijedupred84ri1qjv15rmd5n3pd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

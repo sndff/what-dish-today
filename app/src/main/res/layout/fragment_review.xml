@@ -1,32 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.detail.fragment.ReviewFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_resep"
         android:layout_width="match_parent"
-        android:layout_height="665dp"
+        android:layout_height="0dp"
         android:transitionName="data"
-        tools:listitem="@layout/review" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="7dp"
+        tools:listitem="@layout/item_review"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout"/>
 
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyleLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true" />
+        android:layout_centerInParent="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:background="@color/cream_200"
         android:orientation="horizontal"
-        android:paddingHorizontal="10dp">
+        android:paddingHorizontal="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <EditText
             android:id="@+id/messageEditText"
@@ -62,4 +75,4 @@
 
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
