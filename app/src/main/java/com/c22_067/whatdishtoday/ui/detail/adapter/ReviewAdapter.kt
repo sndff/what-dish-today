@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
 import com.c22_067.whatdishtoday.R
 import com.c22_067.whatdishtoday.data.Review
 import com.c22_067.whatdishtoday.databinding.ReviewBinding
@@ -19,7 +20,7 @@ class ReviewAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ReviewViewHolder {
         val inflater = LayoutInflater.from(parent.context)
-        val view = inflater.inflate(R.layout.review, parent, false)
+        val view = inflater.inflate(R.layout.item_review, parent, false)
         val binding = ReviewBinding.bind(view)
         return ReviewViewHolder(binding)
     }
@@ -33,6 +34,7 @@ class ReviewAdapter(
             binding.tvItemName.text = item.name
             Glide.with(itemView.context)
                 .load(item.photoUrl)
+                .apply(RequestOptions().override(70, 70))
                 .circleCrop()
                 .into(binding.imgItemProfil)
             binding.tvItemDescription.text = item.text
@@ -48,5 +50,4 @@ class ReviewAdapter(
             }
         }
     }
-
 }

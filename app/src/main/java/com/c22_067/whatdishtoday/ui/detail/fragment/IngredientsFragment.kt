@@ -25,7 +25,7 @@ class IngredientsFragment : Fragment() {
             val builder = SpannableStringBuilder()
             if (detail != null) {
                 detail.ingredient?.forEach { ingredient ->
-                    builder.append(ingredient + "\n")
+                    builder.append(ingredient + "\n\n")
                 }
             }
             binding.tvIngredients.text = builder

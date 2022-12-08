@@ -25,7 +25,7 @@ class DirectionsFragment : Fragment() {
             val builder = SpannableStringBuilder()
             if (detail != null) {
                 detail.step?.forEach { steps ->
-                    builder.append(steps + "\n")
+                    builder.append(steps + "\n\n")
                 }
             }
             binding.tvSteps.text = builder

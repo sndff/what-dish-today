@@ -85,7 +85,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun updateUI(currentUser: FirebaseUser?) {
         if (currentUser != null) {
-            startActivity(Intent(this@MainActivity, HomeActivity::class.java))
+            val i = Intent(this@MainActivity, HomeActivity::class.java)
+            startActivity(i)
             finish()
         }
     }
@@ -94,28 +95,3 @@ class MainActivity : AppCompatActivity() {
         private const val TAG = "LoginActivity"
     }
 }
-
-
-
-//        binding.btnLogin.setOnClickListener {
-//            val dialogBuilder = AlertDialog.Builder(this)
-//            val popUp = layoutInflater.inflate(R.layout.popup_login, null)
-//            dialogBuilder.setTitle("Sign In")
-//            dialogBuilder.setView(popUp)
-//            dialogBuilder.show()
-//        }
-//
-//        binding.btnRegister.setOnClickListener {
-//            val dialogBuilder = AlertDialog.Builder(this)
-//            val popUp = layoutInflater.inflate(R.layout.popup_register, null)
-//            dialogBuilder.setTitle("Sign Up")
-//            dialogBuilder.setView(popUp)
-//            dialogBuilder.show()
-//        }
-//
-//        binding.btnHome.setOnClickListener {
-//            val i = Intent(this, HomeActivity::class.java)
-//            startActivity(i)
-//        }
-//    }
-//}

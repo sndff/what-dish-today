@@ -17,6 +17,8 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
+import okhttp3.internal.notify
+import okhttp3.internal.notifyAll
 import java.util.*
 
 class ReviewFragment : Fragment() {
@@ -29,8 +31,13 @@ class ReviewFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         binding = FragmentReviewBinding.inflate(inflater)
 
+        val layoutManager = LinearLayoutManager(context)
+        layoutManager.stackFromEnd = true
+        binding.rvResep.layoutManager = layoutManager
+
         return binding.root
     }
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -39,36 +46,44 @@ class ReviewFragment : Fragment() {
         val firebaseUser = auth.currentUser
 
         db = Firebase.database
+
         val messagesRef = db.reference.child(MESSAGES_CHILD)
+        // buat nge filter review per makanan set key nya dari sini
+        // buat id/kenya harusnya udah masuk ke database
 
-        binding.sendButton.setOnClickListener {
-            val friendlyReview = Review(
-                binding.messageEditText.text.toString(),
-//                firebaseUser?.tenantId.toString(),
-                firebaseUser?.displayName.toString(),
-                firebaseUser?.photoUrl.toString(),
-                Date().time
-            )
-            messagesRef.push().setValue(friendlyReview) { error, _ ->
-                if (error != null) {
-                    Toast.makeText(context, getString(R.string.send_error) + error.message, Toast.LENGTH_SHORT).show()
-                } else {
-                    Toast.makeText(context, getString(R.string.send_success), Toast.LENGTH_SHORT).show()
-                }
-            }
-            binding.messageEditText.setText("")
-        }
-
-        val manager = LinearLayoutManager(context)
-        manager.stackFromEnd = true
-        binding.rvResep.layoutManager = manager
+        binding.progressBar.visibility = View.GONE
 
         val options = FirebaseRecyclerOptions.Builder<Review>()
             .setQuery(messagesRef, Review::class.java)
+            .setLifecycleOwner(this)
             .build()
         adapter = ReviewAdapter(options, firebaseUser?.displayName)
         binding.rvResep.adapter = adapter
 
+        binding.sendButton.setOnClickListener {
+            binding.progressBar.visibility = View.VISIBLE
+            if(binding.messageEditText.text.toString() != "") {
+                val friendlyReview = Review(
+                    requireArguments().getString("key"), // ini id untuk makanan, tiap review harusnya ada dalam 1 database yang sama tapi id ini yang membedakan review diantara semua makanan
+                    binding.messageEditText.text.toString(),
+                    firebaseUser?.displayName.toString(),
+                    firebaseUser?.photoUrl.toString(),
+                    Date().time
+                )
+                messagesRef.push().setValue(friendlyReview) { error, _ ->
+                    if (error != null) {
+                        Toast.makeText(context,getString(R.string.send_error) + error.message,Toast.LENGTH_SHORT).show()
+                    } else {
+                        Toast.makeText(context,getString(R.string.send_success),Toast.LENGTH_SHORT).show()
+                    }
+                }
+                binding.progressBar.visibility = View.GONE
+                binding.messageEditText.setText("")
+            } else {
+                Toast.makeText(context,"Field review tidak boleh kosong",Toast.LENGTH_SHORT).show()
+                binding.progressBar.visibility = View.GONE
+            }
+        }
     }
 
     override fun onResume() {
@@ -76,20 +91,17 @@ class ReviewFragment : Fragment() {
         adapter.startListening()
     }
 
-    override fun onPause() {
-        adapter.stopListening()
-        super.onPause()
-    }
-
-//    private fun Loading(state: Boolean) {
-//        if (state) {
-//            binding.progressBar.show()
-//        } else {
-//            binding.progressBar.hide()
-//        }
-//    }
-
     companion object {
         const val MESSAGES_CHILD = "messages"
+    }
+
+    fun launchFragment(key: String?): ReviewFragment {
+        val fragment = ReviewFragment()
+        val bundle = Bundle().apply {
+            putString("key", key)
+        }
+        fragment.arguments = bundle
+
+        return fragment
     }
 }
