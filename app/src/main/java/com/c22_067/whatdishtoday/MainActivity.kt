@@ -2,14 +2,11 @@ package com.c22_067.whatdishtoday
 
 import android.app.Activity
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.appcompat.app.AlertDialog
-import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.appcompat.app.AppCompatActivity
 import com.c22_067.whatdishtoday.databinding.ActivityMainBinding
-import com.c22_067.whatdishtoday.databinding.PopupLoginBinding
 import com.c22_067.whatdishtoday.ui.home.HomeActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -20,6 +17,7 @@ import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 
 
 class MainActivity : AppCompatActivity() {
@@ -46,6 +44,7 @@ class MainActivity : AppCompatActivity() {
         binding.btnGoogle.setOnClickListener {
             signIn()
         }
+
     }
 
     private fun signIn() {
@@ -92,6 +91,14 @@ class MainActivity : AppCompatActivity() {
             finish()
         }
     }
+
+    override fun onStart() {
+        super.onStart()
+        // Check if user is signed in (non-null) and update UI accordingly.
+        val currentUser = auth.currentUser
+        updateUI(currentUser)
+    }
+
 
     companion object {
         private const val TAG = "LoginActivity"
