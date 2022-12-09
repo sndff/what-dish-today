@@ -6,4 +6,9 @@
         android:title="@string/favorte"
         android:icon = "@drawable/ic_favorite"
         app:showAsAction="always" />
+
+    <item android:id="@+id/logout"
+        android:title="@string/logout"
+        android:icon = "@drawable/ic_baseline_logout_24"
+        app:showAsAction="always" />
 </menu>

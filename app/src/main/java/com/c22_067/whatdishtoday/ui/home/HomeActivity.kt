@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
+import com.c22_067.whatdishtoday.MainActivity
 import com.c22_067.whatdishtoday.R
 import com.c22_067.whatdishtoday.databinding.ActivityHomeBinding
 import com.c22_067.whatdishtoday.ui.favorite.FavoriteActivity
@@ -38,6 +39,15 @@ class HomeActivity : AppCompatActivity() {
 
         viewModel.getRecipe(this, binding)
 
+        auth = Firebase.auth
+        val firebaseUser = auth.currentUser
+        if (firebaseUser == null) {
+            // Not signed in, launch the Login activity
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
+            return
+        }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -53,7 +63,17 @@ class HomeActivity : AppCompatActivity() {
                 startActivity(i)
                 return true
             }
+            R.id.logout->{
+                signOut()
+                true
+            }
             else -> true
         }
+    }
+
+    private fun signOut() {
+        auth.signOut()
+        startActivity(Intent(this, HomeActivity::class.java))
+        finish()
     }
 }

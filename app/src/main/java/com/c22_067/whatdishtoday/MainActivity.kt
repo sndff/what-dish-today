@@ -45,14 +45,6 @@ class MainActivity : AppCompatActivity() {
             signIn()
         }
 
-        auth = Firebase.auth
-        val firebaseUser = auth.currentUser
-        if (firebaseUser == null) {
-            // Not signed in, launch the Login activity
-            startActivity(Intent(this, MainActivity::class.java))
-            finish()
-            return
-        }
     }
 
     private fun signIn() {
