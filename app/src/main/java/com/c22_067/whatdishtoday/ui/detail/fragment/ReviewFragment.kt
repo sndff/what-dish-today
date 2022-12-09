@@ -37,8 +37,7 @@ class ReviewFragment : Fragment() {
         layoutManager.stackFromEnd = true
         binding.rvResep.layoutManager = layoutManager
 
-        db = Firebase.database.reference
-
+        db = Firebase.database.getReference("review")
 
         return binding.root
     }
@@ -50,15 +49,12 @@ class ReviewFragment : Fragment() {
         auth = Firebase.auth
         val firebaseUser = auth.currentUser
 
+        val key = requireArguments().getString("key")
 
-        val messagesRef = db.child("review")
+        val messagesRef = db.child(key!!)
         // buat nge filter review per makanan set key nya dari sini
         // buat id/kenya harusnya udah masuk ke database
 
-        val key = requireArguments().getString("key")
-
-//        val filtered = messagesRef.orderByChild("review").equalTo(key)
-        // filter undone
 
         binding.progressBar.visibility = View.GONE
 
