@@ -20,8 +20,8 @@ class MainRepository {
     private var _detail = MutableLiveData<ResultsDetail?>()
     val detail: LiveData<ResultsDetail?> = _detail
     // search recipes
-    private var _search = MutableLiveData<List<ResultsSearchItem?>?>()
-    val search: LiveData<List<ResultsSearchItem?>?> = _search
+    private var _search = MutableLiveData<List<ResultsRecipesItem?>?>()
+    val search: LiveData<List<ResultsRecipesItem?>?> = _search
 
     fun getRecipes() {
         executorService.execute { recipes() }
@@ -82,10 +82,10 @@ class MainRepository {
 
     private fun find(param: String){
         val client = Config.getApiService().findMakanan(param)
-        client.enqueue(object : Callback<SearchRecipeResponse> {
+        client.enqueue(object : Callback<RecipesResponse> {
             override fun onResponse(
-                call: Call<SearchRecipeResponse>,
-                response: Response<SearchRecipeResponse>
+                call: Call<RecipesResponse>,
+                response: Response<RecipesResponse>
             ) {
                 if (response.isSuccessful) {
                     if (response.body() != null) {
@@ -96,7 +96,7 @@ class MainRepository {
 //                    Toast.makeText(activity, "Failed To Fetch Stories", Toast.LENGTH_SHORT).show()
                 }
             }
-            override fun onFailure(call: Call<SearchRecipeResponse>, t: Throwable) {
+            override fun onFailure(call: Call<RecipesResponse>, t: Throwable) {
                 Log.e("Error on Story Activity", "${t.message}")
             }
         })
