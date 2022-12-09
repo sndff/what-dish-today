@@ -29,32 +29,6 @@ import retrofit2.Response
 
 class HomeViewModel : ViewModel() {
     private val repository = MainRepository()
-//
-//    fun findUser(activity: AppCompatActivity, binding: ActivityHomeBinding, search:String) {
-//
-//        lateinit var find : List<ResultsRecipesItem>
-////        _isLoading.value = true
-//        val client = Config.getApiService().findMakanan(search)
-//        client.enqueue(object : Callback<RecipesResponse> {
-//            override fun onResponse(
-//                call: Call<RecipesResponse>,
-//                response: Response<RecipesResponse>
-//            ) {
-//                if (response.isSuccessful) {
-////                    _isLoading.value = false
-//                    find = response.body()?.results as List<ResultsRecipesItem>
-//                    Log.v("masuk", find.toString())
-//                } else {
-//                    Log.e(TAG, "onFailure: ${response.message()}")
-//                }
-//            }
-//            override fun onFailure(call: Call<RecipesResponse>, t: Throwable) {
-////                _isLoading.value = false
-//                Log.e(TAG, "onFailure: ${t.message.toString()}")
-//            }
-//        })
-//        showRecipes(activity, binding.rvHomeListRecipe,find)
-//    }
 
     fun find(activity: AppCompatActivity, binding: ActivityHomeBinding,query:String ){
         var search: List<ResultsRecipesItem?>?
