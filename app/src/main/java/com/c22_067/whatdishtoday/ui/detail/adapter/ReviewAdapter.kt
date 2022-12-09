@@ -9,7 +9,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.c22_067.whatdishtoday.R
 import com.c22_067.whatdishtoday.data.Review
-import com.c22_067.whatdishtoday.databinding.ReviewBinding
+import com.c22_067.whatdishtoday.databinding.ItemReviewBinding
 import com.firebase.ui.database.FirebaseRecyclerAdapter
 import com.firebase.ui.database.FirebaseRecyclerOptions
 
@@ -21,7 +21,7 @@ class ReviewAdapter(
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ReviewViewHolder {
         val inflater = LayoutInflater.from(parent.context)
         val view = inflater.inflate(R.layout.item_review, parent, false)
-        val binding = ReviewBinding.bind(view)
+        val binding = ItemReviewBinding.bind(view)
         return ReviewViewHolder(binding)
     }
 
@@ -29,7 +29,7 @@ class ReviewAdapter(
         holder.bind(model)
     }
 
-    inner class ReviewViewHolder(private val binding: ReviewBinding) : RecyclerView.ViewHolder(binding.root) {
+    inner class ReviewViewHolder(private val binding: ItemReviewBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(item: Review) {
             binding.tvItemName.text = item.name
             Glide.with(itemView.context)

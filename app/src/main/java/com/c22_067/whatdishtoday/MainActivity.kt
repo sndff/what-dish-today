@@ -44,6 +44,15 @@ class MainActivity : AppCompatActivity() {
         binding.btnGoogle.setOnClickListener {
             signIn()
         }
+
+        auth = Firebase.auth
+        val firebaseUser = auth.currentUser
+        if (firebaseUser == null) {
+            // Not signed in, launch the Login activity
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
+            return
+        }
     }
 
     private fun signIn() {
@@ -90,6 +99,14 @@ class MainActivity : AppCompatActivity() {
             finish()
         }
     }
+
+    override fun onStart() {
+        super.onStart()
+        // Check if user is signed in (non-null) and update UI accordingly.
+        val currentUser = auth.currentUser
+        updateUI(currentUser)
+    }
+
 
     companion object {
         private const val TAG = "LoginActivity"
