@@ -1,31 +1,18 @@
 package com.c22_067.whatdishtoday.ui.home
 
-import android.app.Application
-import android.content.ContentValues.TAG
 import android.content.Intent
 import android.content.res.Configuration
-import android.util.Log
 import android.view.View
 import android.widget.AdapterView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.c22_067.whatdishtoday.data.MakananSearch
 import com.c22_067.whatdishtoday.ui.home.adapter.RecipeListsAdapter
 import com.c22_067.whatdishtoday.databinding.ActivityHomeBinding
-import com.c22_067.whatdishtoday.network.Config
 import com.c22_067.whatdishtoday.network.repository.MainRepository
-import com.c22_067.whatdishtoday.network.responses.RecipesResponse
 import com.c22_067.whatdishtoday.network.responses.ResultsRecipesItem
-import com.c22_067.whatdishtoday.network.responses.ResultsSearchItem
-import com.c22_067.whatdishtoday.network.responses.SearchRecipeResponse
 import com.c22_067.whatdishtoday.ui.detail.activity.DetailMenuActivity
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 
 class HomeViewModel : ViewModel() {
     private val repository = MainRepository()
@@ -60,7 +47,7 @@ class HomeViewModel : ViewModel() {
         rv.adapter = recipeListAdapter
         recipeListAdapter.setOnItemClickCallback(object : RecipeListsAdapter.OnItemClick{
             override fun onItemClicked(data: ResultsRecipesItem?) {
-                showSelectedRecipe(activity, data?.key)
+                showSelectedRecipe(activity, data)
             }
 
             override fun onItemClick(
@@ -74,9 +61,11 @@ class HomeViewModel : ViewModel() {
         })
     }
 
-    private fun showSelectedRecipe(activity: AppCompatActivity, list: String?) {
+    private fun showSelectedRecipe(activity: AppCompatActivity, list: ResultsRecipesItem?) {
         val intent = Intent(activity, DetailMenuActivity::class.java)
-        intent.putExtra(DetailMenuActivity.KEY, list)
+        intent.putExtra(DetailMenuActivity.KEY, list?.key)
+        intent.putExtra(DetailMenuActivity.NAME, list?.title)
+        intent.putExtra(DetailMenuActivity.PHOTO, list?.thumb)
         activity.startActivity(intent)
     }
 }

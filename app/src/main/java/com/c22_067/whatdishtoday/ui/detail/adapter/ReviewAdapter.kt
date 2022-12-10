@@ -8,15 +8,15 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.c22_067.whatdishtoday.R
-import com.c22_067.whatdishtoday.data.Review
+import com.c22_067.whatdishtoday.data.ReviewModel
 import com.c22_067.whatdishtoday.databinding.ItemReviewBinding
 import com.firebase.ui.database.FirebaseRecyclerAdapter
 import com.firebase.ui.database.FirebaseRecyclerOptions
 
 class ReviewAdapter(
-    options: FirebaseRecyclerOptions<Review>,
+    options: FirebaseRecyclerOptions<ReviewModel>,
     private val currentUserName: String?
-) : FirebaseRecyclerAdapter<Review, ReviewAdapter.ReviewViewHolder>(options) {
+) : FirebaseRecyclerAdapter<ReviewModel, ReviewAdapter.ReviewViewHolder>(options) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ReviewViewHolder {
         val inflater = LayoutInflater.from(parent.context)
@@ -25,12 +25,12 @@ class ReviewAdapter(
         return ReviewViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: ReviewViewHolder, position: Int, model: Review) {
+    override fun onBindViewHolder(holder: ReviewViewHolder, position: Int, model: ReviewModel) {
         holder.bind(model)
     }
 
     inner class ReviewViewHolder(private val binding: ItemReviewBinding) : RecyclerView.ViewHolder(binding.root) {
-        fun bind(item: Review) {
+        fun bind(item: ReviewModel) {
             binding.tvItemName.text = item.name
             Glide.with(itemView.context)
                 .load(item.photoUrl)

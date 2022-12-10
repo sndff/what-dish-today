@@ -23,11 +23,6 @@ class RecipeListsAdapter(private val list: List<ResultsRecipesItem?>?) : Recycle
         this.onItemClick = onItemClick
     }
 
-    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
-        var ivRecipeImage: ImageView = itemView.findViewById(R.id.iv__dish)
-        var tvRecipeName: TextView = itemView.findViewById(R.id.tv_main_dish_name)
-    }
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view: View = LayoutInflater.from(parent.context).inflate(R.layout.item_rv_main_category, parent, false)
         return ViewHolder(view)
@@ -40,10 +35,13 @@ class RecipeListsAdapter(private val list: List<ResultsRecipesItem?>?) : Recycle
             .load(img)
             .into(holder.ivRecipeImage)
         holder.tvRecipeName.text = name
-        
         holder.itemView.setOnClickListener { 
             onItemClick.onItemClicked(list!![holder.adapterPosition])
         }
+    }
+    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
+        var ivRecipeImage: ImageView = itemView.findViewById(R.id.iv__dish)
+        var tvRecipeName: TextView = itemView.findViewById(R.id.tv_main_dish_name)
     }
 
     override fun getItemCount(): Int = list!!.size

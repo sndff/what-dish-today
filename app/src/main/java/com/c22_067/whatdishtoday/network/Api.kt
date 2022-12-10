@@ -1,11 +1,11 @@
 package com.c22_067.whatdishtoday.network
 
-import com.c22_067.whatdishtoday.data.MakananSearch
-import com.c22_067.whatdishtoday.network.responses.RecipesResponse
 import com.c22_067.whatdishtoday.network.responses.DetailRecipeResponse
-import com.c22_067.whatdishtoday.network.responses.SearchRecipeResponse
+import com.c22_067.whatdishtoday.network.responses.RecipesResponse
 import retrofit2.Call
-import retrofit2.http.*
+import retrofit2.http.GET
+import retrofit2.http.Path
+import retrofit2.http.Query
 
 interface Api {
     @GET("/api/search/")
@@ -20,4 +20,7 @@ interface Api {
 
     @GET("/api/recipes")
     fun getMakanan(): Call<RecipesResponse>
+
+    @GET("/api/recipes/{page}")
+    fun getNextMakanan(): Call<RecipesResponse>
 }

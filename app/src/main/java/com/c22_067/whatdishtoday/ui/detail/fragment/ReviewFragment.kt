@@ -8,19 +8,15 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.c22_067.whatdishtoday.R
-import com.c22_067.whatdishtoday.data.Review
+import com.c22_067.whatdishtoday.data.ReviewModel
 import com.c22_067.whatdishtoday.databinding.FragmentReviewBinding
 import com.c22_067.whatdishtoday.ui.detail.adapter.ReviewAdapter
 import com.firebase.ui.database.FirebaseRecyclerOptions
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
-import okhttp3.internal.notify
-import okhttp3.internal.notifyAll
-import java.lang.ref.Reference
 import java.util.*
 
 class ReviewFragment : Fragment() {
@@ -48,7 +44,6 @@ class ReviewFragment : Fragment() {
 
         auth = Firebase.auth
         val firebaseUser = auth.currentUser
-
         val key = requireArguments().getString("key")
 
         val messagesRef = db.child(key!!)
@@ -58,8 +53,8 @@ class ReviewFragment : Fragment() {
 
         binding.progressBar.visibility = View.GONE
 
-        val options = FirebaseRecyclerOptions.Builder<Review>()
-            .setQuery(messagesRef, Review::class.java)
+        val options = FirebaseRecyclerOptions.Builder<ReviewModel>()
+            .setQuery(messagesRef, ReviewModel::class.java)
             .setLifecycleOwner(this)
             .build()
 
@@ -69,14 +64,14 @@ class ReviewFragment : Fragment() {
         binding.sendButton.setOnClickListener {
             binding.progressBar.visibility = View.VISIBLE
             if(binding.messageEditText.text.toString() != "") {
-                val friendlyReview = Review(
+                val friendlyReviewModel = ReviewModel(
                     key, // ini id untuk makanan, tiap review harusnya ada dalam 1 database yang sama tapi id ini yang membedakan review diantara semua makanan
                     binding.messageEditText.text.toString(),
                     firebaseUser?.displayName.toString(),
                     firebaseUser?.photoUrl.toString(),
                     Date().time
                 )
-                messagesRef.push().setValue(friendlyReview) { error, _ ->
+                messagesRef.push().setValue(friendlyReviewModel) { error, _ ->
                     if (error != null) {
                         Toast.makeText(context,getString(R.string.send_error) + error.message,Toast.LENGTH_SHORT).show()
                     } else {

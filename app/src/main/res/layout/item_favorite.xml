@@ -2,7 +2,6 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="160dp"
     android:layout_height="167dp"
-    app:cardBackgroundColor="@color/light_green"
     app:cardCornerRadius="10dp"
     app:cardElevation="@dimen/_5sdp"
     android:layout_marginLeft="8dp"
@@ -11,22 +10,20 @@
     android:layout_marginBottom="8dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-
             <ImageView
                 android:id="@+id/img_dish"
-                android:layout_width="123dp"
-                android:layout_height="121dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="0dp"
-                android:layout_marginEnd="-3dp"
-                android:src="@drawable/dish" />
+                android:contentDescription="@string/photo"
+                android:foreground="@drawable/gradient"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cat_img" />
 
             <TextView
                 android:id="@+id/tv_dish_name"
@@ -34,15 +31,15 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="1dp"
-                android:layout_marginBottom="0dp"
-                android:gravity="start"
+                android:fontFamily="@font/gilroy_bold"
                 android:maxEms="10"
                 android:maxLines="2"
-                android:padding="10dp"
-                android:text="Dish Name"
+                android:padding="13dp"
+                android:text="@string/dish_name"
                 android:textColor="@color/white"
-                android:textSize="16dp" />
+                android:textSize="17sp" />
+
+
         </RelativeLayout>
 
 

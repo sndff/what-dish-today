@@ -50,7 +50,6 @@ class HomeActivity : AppCompatActivity() {
         if (firebaseUser == null) {
             // Not signed in, launch the Login activity
             startActivity(Intent(this, MainActivity::class.java))
-            finish()
             return
         }
 
