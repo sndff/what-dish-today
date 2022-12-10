@@ -29,6 +29,12 @@ class FavoriteActivity : AppCompatActivity() {
         supportActionBar?.title = "Favorite"
         binding.rvFavorite.layoutManager = GridLayoutManager(this, 2)
 
+
+        showRecycle()
+
+    }
+
+    private fun showRecycle(){
         list.addAll(listFav)
 
         db = Firebase.database.getReference("favorite")
@@ -45,6 +51,11 @@ class FavoriteActivity : AppCompatActivity() {
         adapter = ListFavoriteAdapter(options)
         binding.rvFavorite.adapter = adapter
 
+    }
+
+    override fun onResume() {
+        showRecycle()
+        super.onResume()
     }
 
     private val listFav: ArrayList<TempFavorite>

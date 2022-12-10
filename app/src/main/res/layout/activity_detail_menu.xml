@@ -19,22 +19,19 @@
         android:id="@+id/view_pager"
         android:layout_marginTop="48dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent" >
 
-    <ToggleButton
+    </androidx.viewpager2.widget.ViewPager2>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fav_add"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="65dp"
-        android:foregroundGravity="bottom"
-        app:layout_anchorGravity="bottom|end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:clickable="true"
+        app:backgroundTint="@color/purple_200"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:textOn=""
-        android:textOff=""
-        android:background="@drawable/ic_favorite_abu"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
-        />
+        app:srcCompat="@drawable/ic_favorite" />
 </androidx.constraintlayout.widget.ConstraintLayout>

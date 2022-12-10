@@ -1,8 +1,10 @@
 package com.c22_067.whatdishtoday.ui.detail.activity
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.lifecycle.ViewModelProvider
 import androidx.viewpager2.widget.ViewPager2
 import com.c22_067.whatdishtoday.R
@@ -15,7 +17,10 @@ import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 
@@ -39,6 +44,7 @@ class DetailMenuActivity : AppCompatActivity() {
         val key = intent.getStringExtra("key")
         val name = intent.getStringExtra("name")
         val photo = intent.getStringExtra("photo")
+        var isFavorited = false
 
         viewModel = ViewModelProvider(this)[DetailViewModel::class.java]
 
@@ -56,15 +62,52 @@ class DetailMenuActivity : AppCompatActivity() {
 
         db = Firebase.database.getReference("favorite")
 
-        binding.favAdd.setOnClickListener{
-          viewModel.addfavorite(
-              key!!,
-              name!!,
-              photo!!,
-              firebaseUser?.uid!!,
-              db
-          )
-        }
+
+//  tes
+        db.child(auth.uid!!).child("isFavorite").child(key.toString())
+            .addValueEventListener(object : ValueEventListener{
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    isFavorited = snapshot.exists()
+                    if(isFavorited){
+                        viewModel.deleteFavorite(
+                            key!!,
+                            name!!,
+                            photo!!,
+                            firebaseUser?.uid!!,
+                            db
+                        )
+                        binding.favAdd.setImageDrawable(
+                            ContextCompat.getDrawable(binding.favAdd.context,
+                                R.drawable.ic_favorite
+                            ))
+
+                    }else{
+                        binding.favAdd.setOnClickListener{
+                            viewModel.addfavorite(
+                                key!!,
+                                name!!,
+                                photo!!,
+                                firebaseUser?.uid!!,
+                                db
+                            )
+                            binding.favAdd.setImageDrawable(
+                                ContextCompat.getDrawable(binding.favAdd.context,
+                                    R.drawable.ic_favorite_abu
+                                ))
+                        }
+                    }
+
+                }
+
+                override fun onCancelled(error: DatabaseError) {
+                    TODO("Not yet implemented")
+                }
+
+            })
+
+
+
+
     }
 
     override fun onSupportNavigateUp(): Boolean {
