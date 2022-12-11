@@ -9,3 +9,10 @@ Anda dapat mengunduh berkas aplikasi [disini](https://github.com/sndff/what-dish
 # Depedensi yang digunakan
 - Retrofit
 - Glide
+
+# Preview Aplikasi
+![alt text](https://github.com/sndff/what-dish-today/blob/main/screenshoots/2022-12-11%20at%2021.28.34.jpeg)
+![alt text](https://github.com/sndff/what-dish-today/blob/main/screenshoots/2022-12-11%20at%2021.28.34%20(1).jpeg)
+![alt text](https://github.com/sndff/what-dish-today/blob/main/screenshoots/2022-12-11%20at%2021.28.34%20(2).jpeg)
+![alt text](https://github.com/sndff/what-dish-today/blob/main/screenshoots/2022-12-11%20at%2021.28.35.jpeg)
+![alt text](https://github.com/sndff/what-dish-today/blob/main/screenshoots/2022-12-11%20at%2021.28.35%20(1).jpeg)
